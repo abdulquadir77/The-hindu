@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital@1&family=Kings&family=Montserrat:ital,wght@1,300&family=Open+Sans:wght@300&family=Oswald:wght@500&family=Pacifico&family=Roboto:wght@400;500&family=Ubuntu:wght@300&family=Vollkorn&display=swap");
+
+* {
+  font-family: "Vollkorn", serif;
+}
+#container {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, auto);
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "news1 news2 news7"
+    "news1 news3 ."
+    ". news4 news8"
+    "news6 news5 ."
+    "slidebar slidebar news9"
+    "slidebar slidebar ."
+    "news12 news11 news10";
+  width: 60%;
+}
+#container > div > img {
+  width: 100%;
+}
+.news1 {
+  font-size: 25px;
+  height: 400px;
+}
+.news1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news1 {
+  grid-area: news1;
+}
+
+.news2 {
+  grid-area: news2;
+}
+.news2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news4 {
+  grid-area: news4;
+}
+.news4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news3 {
+  grid-area: news3;
+}
+.news3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news7 {
+  grid-area: news7;
+  height: 200px;
+}
+.news7:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news8 {
+  grid-area: news8;
+}
+
+.news8:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news9 {
+  grid-area: news9;
+}
+.news9:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news13 {
+  grid-area: slidebar;
+}
+.news13:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news5 {
+  grid-area: news5;
+}
+.news5:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news6 {
+  grid-area: news6;
+}
+.news6:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news12 {
+  grid-area: news12;
+}
+.news12:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news11 {
+  grid-area: news11;
+}
+.news11:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news10 {
+  grid-area: news10;
+}
+.news10:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.news14:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.news15:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.news16:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news17:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.news18:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.news19:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.news20:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
