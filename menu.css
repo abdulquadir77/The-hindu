@@ -10,21 +10,18 @@
     font-weight: normal;
     outline: 0 !important;
 }
-#top-menu{
-    border: 1px solid gray;
-}
+
 #trending{
     width: 70%;
-    border: 1px solid black;
+    border:none;
     padding: 10px;
     background: #133b5a;
 }
 
-
 #close_this{
     width: 70%;
     /* padding-top: 20px; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding-top: 30px;
     padding-bottom: 5px;
     
@@ -32,6 +29,7 @@
 #close_this>a{
     /* position:fixed; */
     margin-left:10px ;
+    font-size: 12px;
     font-family: "Fira Sans",sans-serif;
 
 }
@@ -39,6 +37,7 @@
     text-decoration:underline;
 
 }
+
 
 #trending>ul{
     display: block;
@@ -57,13 +56,17 @@
     padding-top: 0px;
     padding-right: 9.5px;
     padding-bottom: 0px;
+    cursor: pointer;
     /* padding-left: 9.5px; */
+}
+#trending>ul>li:hover{
+    text-decoration:underline;
 }
 
 .details-menu{
     width: 70%;
     padding: 5px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     color: #FFF;
 }
 ul{
@@ -139,4 +142,84 @@ div.details-menu ul.sub-menu2 li a{
     color: #fff;
     font-size: 35px;
     /* margin-top: 10px; */
+}
+#close_this-end{
+    width: 70%;
+    display:flex;
+    /* padding-top: 20px; */
+    /* border: 1px solid red; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    
+    
+    
+    /* line-height: 22px; */
+    
+}
+#close_this-end>div>a{
+    /* position:fixed; */
+    
+    font-family: "Fira Sans",sans-serif;
+    margin-left: 10px;
+}
+#close_this-end>div>a:hover{
+    text-decoration:underline;
+}
+#bottom-bar{
+    width: 70%;
+    padding: 10px;
+    background: #133b5a;
+    border: none;
+    height: 40px;
+}
+#bottom-bar>ul{
+    display: inline;
+    background: #133b5a;
+    
+}
+#bottom-bar>ul>li{
+    display: inline-block;
+    justify-content: flex-start;
+    margin-right: 20px;
+    background: #133b5a;
+    color: #FFF;
+    font-family: "Fira Sans",sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    padding-top: 0px;
+    padding-right: 9.5px;
+    padding-bottom: 0px;
+    /* padding-left: 9.5px; */
+}
+#bottom-section{
+    position: relative;
+    background: #133b5a;
+}
+#bottom-section>div>ul{
+    background: #133b5a;
+}
+#bottom-section>div>ul>li{
+    display: inline;
+    margin-right: 20px;
+    background: #133b5a;
+    color: #FFF;
+    font-family: "Fira Sans",sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    padding-top: 0px;
+    padding-right: 9.5px;
+    padding-bottom: 0px;
+    cursor: pointer;
+}
+#section-div2{
+    position: absolute;
+    right: 0;
+    margin-top: -18px;
+    
+}
+#section-div1>ul>li:hover{
+    text-decoration:underline;
 }
