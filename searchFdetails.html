@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="movie"></div>
+    <!-- <div id="sideMovie"> -->
+    </div>
+    
+</body>
+</html>
+<script>
+    var data = JSON.parse(localStorage.getItem('news'))
+    console.log(data)
+
+    // let image = document.createElement("img")
+    // image.src =data.articles[0].urlToImage;
+
+    // let desc = document.createElement("p")
+    // desc.innerText = data.articles[0].description;
+
+    // let desc = document.createElement("p")
+    // desc.innerText = data.description;
+    
+    // document.getElementById("movie").append(image,desc)
+
+    // data = JSON.stringify(data);
+
+    data.forEach(ele => {
+        var card = document.createElement('div');
+
+        let image=document.createElement("img")  //IMAGE
+        image.src=ele.articles.urlToImage
+
+        card.append(image)
+        document.getElementById("movie").append(card)
+        
+    });
+
+
+    // data.forEach(function (el){
+    //     var card = document.createElement('div');
+
+        // let bigcard=document.createElement("div")
+        // bigcard.setAttribute("id","moviecard")
+
+        // let image=document.createElement("img")  //IMAGE
+        // image.src=el.articles.urlToImage
+
+        // card.append(image)
+        // document.getElementById("movie").append(card)
+
+        // var cardBody = document.createElement('div');
+        
+        // var newsHeading = document.createElement('h2');  //NEWSHEADING
+        // newsHeading.className = "card-title";
+        // newsHeading.innerHTML = el.title;
+        
+        // var dateHeading = document.createElement('h6');
+        // dateHeading.className = "text-primary";
+        // // dateHeading.innerHTML = date[0];
+        // dateHeading.innerHTML = el.publishedAt
+
+        // var discription = document.createElement('p');
+        // discription.className="moviedes";
+        // discription.innerHTML = el.description;
+
+        // var link = document.createElement('a');
+        // link.className="btn btn-dark";
+        // link.setAttribute("target", "_blank");
+        // link.href = el.url;
+        // link.innerHTML="READ MORE";
+
+        // cardBody.appendChild(newsHeading);
+        // // cardBody.appendChild(dateHeading);
+        // cardBody.appendChild(discription);
+        // cardBody.appendChild(link);
+
+        // card.appendChild(image);
+        // card.appendChild(cardBody);
+
+        // bigcard.appendChild(card);
+
+        // movie.appendChild(bigcard);
+        // bigcard.append(image)
+        // movie.append(bigcard)
+    // })
+
+
+
+    // function append(data){
+    // movie.innerHTML=null
+    // data.forEach(function (el){
+    //     var card = document.createElement('div');
+
+     
+
+    //     let image=document.createElement("img")  //IMAGE
+    //     image.src=el.urlToImage
+    //     image.setAttribute("id","movieimg")
+
+    //     card.append(image)
+    //     movie.append(card)
+
+        // var cardBody = document.createElement('div');
+        
+        // var newsHeading = document.createElement('h2');  //NEWSHEADING
+        // newsHeading.className = "card-title";
+        // newsHeading.innerHTML = el.title;
+
+        // var discription = document.createElement('p');
+        // discription.className="moviedes";
+        // discription.innerHTML = el.description;
+
+        // var link = document.createElement('a');
+        // link.className="btn btn-dark";
+        // link.setAttribute("target", "_blank");
+        // link.href = el.url;
+        // link.innerHTML="READ MORE";
+
+        // cardBody.appendChild(newsHeading);
+        
+        // cardBody.appendChild(discription);
+        // cardBody.appendChild(link);
+
+        // card.appendChild(image);
+        // card.appendChild(cardBody);
+
+        // bigcard.appendChild(card);
+
+        // movie.appendChild(bigcard);
+        
+    // })
+// }
+
+</script>
