@@ -2,12 +2,356 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Exo+2:wght@700&family=Fira+Sans+Condensed:wght@500&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+          }
+        body{
+            margin-left: 15%;
+            margin-right: 15%;
+            background: #f5f5f5;
+        }
+        #container{
+            border-bottom: solid 1px #c8c8c3;
+            margin-top: 40px;
+            position: relative;
+        }
+        #socialist >ul>li{
+            color: #5a5a5a;
+            border-right: solid 1px #c8c8c3;
+            height: 28px;
+            display: inline-block;
+            padding: 0px 14px 8px;
+            
+        }
+        #socialist >ul>li>a{
+            cursor: pointer;
+        }
+        #footer-logo{
+            text-align: center;
+            margin-top: -25px;
+            margin-left:6%;
+        }
+        #footer-logo>a{
+            width: 250px;
+            height: 24px;
+        }
+        img{
+            text-align: center;
+            margin-left: 10%;
+            width: 250px;
+            height: 20px;
+            max-height: none;
+        }
+        #search-box{
+            margin-top: -27.5px;
+            position: absolute;
+            right: 0;   
+        }
+        input[type=text] {
+            background: #f5f5f5;
+            border: none;
+            font-size: 12px;
+            font-weight: 600;
+            height: 28px;
+            padding: 0 10px;
+            border-left: 1px solid #CCC;
+            outline:none;
+       }
+       .fa-magnifying-glass{    
+            float: right;
+            display: block;
+            font-size: 14px;
+            line-height: 14px;
+            margin-left: 14px;
+            padding: 5px 10px 0 0;
+            background: none;
+            color: #000;
+            border: none;
+       }
+       #site-footer{
+            display: block;
+            width: 100%;
+            background-color: #FFF;
+            position: relative;
+            float: left;
+            padding: 15px;
+            border-top: solid 1px #c8c8c3;
+       }
+       
+       #column {
+            width: 30%;
+            padding: 20px;
+            height: 300px;
+            border-right: dotted 1px #525252;
+            display: inline-block;
+            color: #7e7c76;
+            height: 100%;
+            position: relative;
+            margin: 0 2px;
+        }
+        #column >ul >li{
+            width: 90%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: list-item;
+            text-align: -webkit-match-parent;
+       }
+       #columnn {
+            width: 30%;
+            padding: 20px;
+            height: 300px;
+            display: inline-block;
+            color: #7e7c76;
+            height: 100%;
+            position: relative;
+            margin: 0 2px;
+        }
+        #columnn >ul >li{
+            width: 90%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: list-item;
+            text-align: -webkit-match-parent;
+       }
+        span{
+            display: block;
+            color: #133b5a;
+            letter-spacing: 1.2px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        a{
+            color: #7e7c76;
+            line-height: 24px;
+            font-weight: bold;
+            font-size: smaller;
+            text-transform: capitalize;
+            text-decoration: none;
+            background-color: transparent;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        #col a{
+            color: #5297cd;
+        }
+        #lastt{
+            background: #eaeaea;
+            color: #5a5a5a;
+        }
+        #footer-last{
+            float: left;
+            width: 100%;
+            text-align: center;
+            border-top: solid 1px #c8c8c3;
+        }
+        #main_menu{ 
+            float: left;
+            margin-top: 18px;
+            color: #5a5a5a;
+            letter-spacing: 1.2px;
+            line-height: 13px;
+            padding-bottom: 5px;
+        }
+        #main_menu >ul>li{
+            color: #5a5a5a;
+            display: inline-block;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        #main_menu >ul>li>a{
+            color: #7e7c76;
+            padding: 0 7px;
+            letter-spacing: -.09px;
+            font: weight 1000px;
+        }
+        #footer-last2{
+            display:block;
+            font-size: 11.5px;
+        }
+        #col2{
+            display: inline-block;
+            margin-left: 30px;
+
+        }
+        #main_menu1{
+            margin-left: 9%;
+            margin-top: -20px;
+            text-align: center;
+            float: left;
+            color: #5a5a5a;
+        }
+        #main_menu1{
+            padding: 0;
+            display: inline;
+        }
+        #main_menu1 >ul>li{
+            color: #5a5a5a;
+            display: inline-block;  
+        }
+        #main_menu1 >ul>li>a{
+            margin-left: 20px;
+            color: #7e7c76;
+            padding: 0px 14px 8px;
+            padding: 0 7px ;
+            border-right: 1px solid #7e7c76;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: -.09px;
+        }
+        #footer_finish{
+            margin-top: 4%;
+            text-align: center;
+        }
+        .fa-plus{
+            font-size: 10px;
+            margin-left: -4px;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Welcome to footer</h1>
-    <h2>new</h2>
+    <section id="container">
+        <div id="socialist">
+            <ul>
+                <li><a href="https://www.facebook.com/thehindu"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-solid fa-envelope"></i></li>
+                <li><i class="fa-solid fa-mobile-screen"></i></li>
+                <li><a href=""></a>e-Paper</li>
+            </ul>
+        </div>
+        <div id="footer-logo">
+            <a href="" ><img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt=""></a>
+        </div>
+        <div id="search-box">
+            <form action="">
+                <input type="text" placeholder="Search here...">
+                <button <i class="fa-solid fa-magnifying-glass"></i></i></button>
+            </form>  
+        </div>
+    </section>
+    <div id="site-footer">
+        <div id="row">
+            <div id="column">
+                <span>TRENDING TODAY</span>
+                <ul>
+                    <li> <a href="">Sai Pallavi: Rana Daggubati’s Gesture Comes From A Place Of Security</a></li>
+                    <li> <a href="">PM Announces 18-Month Deadline For Govt. Recruitment To 10 Lakh Posts</a></li>
+                    <li> <a href="">Amshu Chukki Shines A Spotlight On The Unseen With His Solo Show</a></li>
+                    <li><a href="">Arrest Count In Uttar Pradesh, West Bengal Increases; Sporadic Incidents Reported Even As Situation De-Escalates</a></li>
+                    <li><a href="">Explained | What Is The National Herald Case A</a></li>
+                    <li> </li>
+                </ul>
+            </div>
+            <div id="column">
+                <span>TRENDING TODAY</span>
+                <ul>
+                    <li><a href="">The Hindu MetroPlus</a></li>
+                    <li><a href="">Business (General)</a></li>
+                    <li><a href="">Riots</a></li>
+                    <li><a href="">Indian Presidential Election</a></li>
+                    <li> </li>
+                    <li> </li>
+                </ul>
+            </div>
+            <div id="columnn">
+                <span>TRENDING ON OUR </span>
+                <span>GROUP SITES</span>
+                <ul>
+                    <li id="col" ><a href="">BUSINESSLINE</a></li>
+                    <li><a href="">Steel Import and Export</a></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+          </div>
+    </div>
+    <div id="lastt">
+    <div id="footer-last">
+        <div id="main_menu">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">NEWS</a></li>
+                <li><a href="">CORONAVIRUS</a></li>
+                <li><a href="">OPINION</a></li>
+                <li><a href="">BUSINESS</a></li>
+                <li><a href="">SPORT</a></li>
+                <li><a href="">CROSSWORD</a><i class="fa-solid fa-plus"></i></li>
+                <li><a href="">COUPONS</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="bc_colours">
+    <div>
+    <div id="footer-last2">
+        <span id="col2">THE SITE</span>
+        <div id="main_menu1">
+            
+            <ul>
+                <li><a href="">About us</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">Archive</a></li>
+                <li><a href="">Print Subscripition</a></li>
+                <li><a href="">ePaper</a></li>
+                <li><a href="">Digital Subscripition</a></li>
+                <li><a href="">Rss Feeds</a></li>
+                <li><a href="">Sitemap</a></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <div>
+    <div id="footer-last2">
+        <span id="col2">GROUP SITES</span>
+        <div id="main_menu1">
+            
+            <ul>
+                <li><a href="">The Hindu</a></li>
+                <li><a href="">இந்து தமிழ் திசை</a></li>
+                <li><a href="">Business Line
+                <li><a href="">BL on Camus</a></li>
+                <li><a href="">Sportstar</a></li>
+                <li><a href="">Frontline</a></li>
+                <li><a href="">The Hindu Center</a></li>
+                <li><a href="">RoofandFloor</a></li>
+                <li><a href="">STEP</a></li>
+                <li><a href="">Young World Club</a></li>
+                <li><a href="">Publication</a></li>
+                <li><a href="">eBooks</a></li>
+                <li><a href="">Images</a></li>
+                <li><a href="">Classifieds</a></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+</div>
+<div id="footer_finish">
+    <span><a href="">CONTACT US</a>" Copyright© 2022, THG PUBLISHING PVT LTD."</span>
+</div>
+
 </body>
 </html>
+
+<script src="https://kit.fontawesome.com/01d90ed8c9.js" crossorigin="anonymous"></script>
