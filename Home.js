@@ -1,10 +1,9 @@
 async function myFunction() {
-  let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=280cfd40a460489e99d7b0bf899d28c3`;
+  let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=280cfd40a460489e99d7b0bf899d28c3`;
   let res = await fetch(url);
 
   let data = await res.json();
   // console.log()
-
   appendData(data.articles);
 }
 myFunction();
