@@ -220,6 +220,7 @@ div.details-menu ul.sub-menu2 li a{
     margin-top: -18px;
     
 }
+/* hover added */
 #section-div1>ul>li:hover{
     text-decoration:underline;
 }
