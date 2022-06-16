@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Exo+2:wght@700&family=Fira+Sans+Condensed:wght@500&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Document</title>
     <style>
         * {
             box-sizing: border-box;
@@ -15,43 +15,38 @@
             padding: 0px;
           }
         body{
-            margin-left: 15%;
-            margin-right: 15%;
+            width: 75%;
+            margin: auto;
             background: #f5f5f5;
         }
-        #container{
+        #container-footer{
             border-bottom: solid 1px #c8c8c3;
             margin-top: 40px;
             position: relative;
         }
-        #socialist >ul>li{
+        #socialist-footer >ul>li{
             color: #5a5a5a;
             border-right: solid 1px #c8c8c3;
+            
             height: 28px;
             display: inline-block;
-            padding: 0px 14px 8px;
+            padding: 0px 12px 3px;
+            height: fit-content;
             
         }
-        #socialist >ul>li>a{
+        #socialist-footer >ul>li>a{
             cursor: pointer;
         }
         #footer-logo{
             text-align: center;
-            margin-top: -25px;
-            margin-left:6%;
+            margin-top: -27px;
         }
-        #footer-logo>a{
-            width: 250px;
-            height: 24px;
-        }
+        
         img{
-            text-align: center;
             margin-left: 10%;
             width: 250px;
-            height: 20px;
-            max-height: none;
         }
-        #search-box{
+        #search-box_footer{
             margin-top: -27.5px;
             position: absolute;
             right: 0;   
@@ -65,6 +60,10 @@
             padding: 0 10px;
             border-left: 1px solid #CCC;
             outline:none;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
        }
        .fa-magnifying-glass{    
             float: right;
@@ -77,53 +76,70 @@
             color: #000;
             border: none;
        }
+
+       /* <!------------------------------Mini nav bar-----------------------------------------------> */
        #site-footer{
-            display: block;
-            width: 100%;
+            display: flex;
+            height: 250px;
+            gap: 10px;
+            width: auto;
             background-color: #FFF;
-            position: relative;
-            float: left;
-            padding: 15px;
-            border-top: solid 1px #c8c8c3;
+            
+
+       }
+       #box-1-footer{
+        height: auto;
+        width: 38%;
+        padding: 12px;
+        
+       }
+       #box-2-footer{
+        height: auto;
+        width: 30%;
+        padding: 20px;
+
+       }
+       #box-3-footer{
+        height: auto;
+        width: 31%;
+        padding: 15px;
+
        }
        
-       #column {
+       #column-footer {
+        
             width: 30%;
-            padding: 20px;
-            height: 300px;
+            padding: 30px;
             border-right: dotted 1px #525252;
             display: inline-block;
-            color: #7e7c76;
-            height: 100%;
-            position: relative;
-            margin: 0 2px;
         }
-        #column >ul >li{
-            width: 90%;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: list-item;
-            text-align: -webkit-match-parent;
-       }
-       #columnn {
-            width: 30%;
-            padding: 20px;
-            height: 300px;
+      ul>li{
+        font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+
+      }
+      ul>li:hover{
+        cursor: pointer;
+        text-decoration: underline;
+      } 
+      a:hover{
+        text-decoration: overline;
+      }
+       #column2-footer {
+            padding: 30px;
             display: inline-block;
-            color: #7e7c76;
             height: 100%;
-            position: relative;
-            margin: 0 2px;
+            margin: 0 20px;
         }
-        #columnn >ul >li{
-            width: 90%;
-            white-space: nowrap;
+        #column2-footer >ul >li{
             overflow: hidden;
-            text-overflow: ellipsis;
-            display: list-item;
-            text-align: -webkit-match-parent;
        }
+       #column2-footer >ul +li:hover{
+        text-decoration: underline;
+
+        }
         span{
             display: block;
             color: #133b5a;
@@ -138,174 +154,175 @@
         a{
             color: #7e7c76;
             line-height: 24px;
-            font-weight: bold;
+            font-weight: 597;
             font-size: smaller;
             text-transform: capitalize;
             text-decoration: none;
-            background-color: transparent;
             font-family: 'Barlow Condensed', sans-serif;
             font-family: 'Exo 2', sans-serif;
             font-family: 'Fira Sans Condensed', sans-serif;
             font-family: 'Titillium Web', sans-serif;
         }
-        #col a{
-            color: #5297cd;
+        a:hover{
+            text-decoration: underline;
         }
-        #lastt{
+        #laster-footer{
             background: #eaeaea;
             color: #5a5a5a;
         }
         #footer-last{
             float: left;
             width: 100%;
-            text-align: center;
-            border-top: solid 1px #c8c8c3;
         }
-        #main_menu{ 
-            float: left;
-            margin-top: 18px;
+        #main_menu-footer{
+            margin-top: 15px;
             color: #5a5a5a;
-            letter-spacing: 1.2px;
-            line-height: 13px;
             padding-bottom: 5px;
         }
-        #main_menu >ul>li{
+        #main_menu-footer >ul>li{
             color: #5a5a5a;
             display: inline-block;
-            margin-left: 10px;
-            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            font-size:small;
+            font-weight: 600;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
         }
-        #main_menu >ul>li>a{
-            color: #7e7c76;
-            padding: 0 7px;
-            letter-spacing: -.09px;
-            font: weight 1000px;
+        #main_menu-footer >ul>li:hover{
+            cursor: pointer;
+            text-decoration: underline;
         }
         #footer-last2{
-            display:block;
             font-size: 11.5px;
         }
-        #col2{
-            display: inline-block;
+        #colom-footer{
             margin-left: 30px;
 
         }
-        #main_menu1{
+        #mainu_menu2-footer{
             margin-left: 9%;
             margin-top: -20px;
             text-align: center;
             float: left;
             color: #5a5a5a;
         }
-        #main_menu1{
-            padding: 0;
-            display: inline;
-        }
-        #main_menu1 >ul>li{
-            color: #5a5a5a;
+        #mainu_menu2-footer >ul>li{
             display: inline-block;  
         }
-        #main_menu1 >ul>li>a{
-            margin-left: 20px;
+        #mainu_menu2-footer >ul>li>a{
+            margin-left: 10px;
             color: #7e7c76;
-            padding: 0px 14px 8px;
             padding: 0 7px ;
             border-right: 1px solid #7e7c76;
             font-size: 12px;
             line-height: 24px;
             letter-spacing: -.09px;
+            
         }
         #footer_finish{
             margin-top: 4%;
             text-align: center;
+            font-size: small;
         }
         .fa-plus{
             font-size: 10px;
-            margin-left: -4px;
+        }
+        
+        #edf{
+            text-overflow: ellipsis;
+            overflow: hidden;     
+            white-space: nowrap;
+        }
+        #styl{
+            margin-top: 10%;
+            color: #133b5a;
+            letter-spacing: 1.2px;
+            font-family: "Fira Sans",sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: small;
+            margin-bottom: 8px;
+            
+        }
+        .fa-magnifying-glass{
+            /* float: right; */
+            /* display: block; */
+            /* font-size: 14px; */
+            /* line-height: 14px; */
+            /* margin-left: 14px; */
+            /* padding: 5px 10px 0 0; */
+            background: none;
+            /* color: #000; */
+            border: none;
+
         }
 
     </style>
 </head>
 <body>
-    <section id="container">
-        <div id="socialist">
+    <section id="container-footer">
+        <div id="socialist-footer">
             <ul>
                 <li><a href="https://www.facebook.com/thehindu"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><i class="fa-brands fa-twitter"></i></li>
-                <li><i class="fa-brands fa-linkedin-in"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
-                <li><i class="fa-solid fa-envelope"></i></li>
-                <li><i class="fa-solid fa-mobile-screen"></i></li>
-                <li><a href=""></a>e-Paper</li>
+                <li><a href="https://twitter.com/The_Hindu"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/school/the-hindu/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/the_hindu/?ref=badge"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.thehindu.com/newsletter-subscription/"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="https://www.thehindu.com/social/"><i class="fa-solid fa-mobile-screen"></i></a></li>
+                <li><a href="https://epaper.thehindu.com/?utm_source=thehindu&utm_medium=header&utm_campaign=landingpage"></a>e-Paper</li>
             </ul>
         </div>
         <div id="footer-logo">
             <a href="" ><img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt=""></a>
         </div>
-        <div id="search-box">
-            <form action="">
-                <input type="text" placeholder="Search here...">
-                <button <i class="fa-solid fa-magnifying-glass"></i></i></button>
-            </form>  
+        <div id="search-box_footer">
+                <input id="query" type="text" placeholder="Search here...">
+                <button  onclick="search()" <i class="fa-solid fa-magnifying-glass" ></i></button>
+                <!-- <button <i class="fa-solid fa-magnifying-glass"></i></i></button> -->
+              
         </div>
     </section>
+
+    
     <div id="site-footer">
-        <div id="row">
-            <div id="column">
-                <span>TRENDING TODAY</span>
-                <ul>
-                    <li> <a href="">Sai Pallavi: Rana Daggubati’s Gesture Comes From A Place Of Security</a></li>
-                    <li> <a href="">PM Announces 18-Month Deadline For Govt. Recruitment To 10 Lakh Posts</a></li>
-                    <li> <a href="">Amshu Chukki Shines A Spotlight On The Unseen With His Solo Show</a></li>
-                    <li><a href="">Arrest Count In Uttar Pradesh, West Bengal Increases; Sporadic Incidents Reported Even As Situation De-Escalates</a></li>
-                    <li><a href="">Explained | What Is The National Herald Case A</a></li>
-                    <li> </li>
-                </ul>
-            </div>
-            <div id="column">
-                <span>TRENDING TODAY</span>
-                <ul>
-                    <li><a href="">The Hindu MetroPlus</a></li>
-                    <li><a href="">Business (General)</a></li>
-                    <li><a href="">Riots</a></li>
-                    <li><a href="">Indian Presidential Election</a></li>
-                    <li> </li>
-                    <li> </li>
-                </ul>
-            </div>
-            <div id="columnn">
-                <span>TRENDING ON OUR </span>
-                <span>GROUP SITES</span>
-                <ul>
-                    <li id="col" ><a href="">BUSINESSLINE</a></li>
-                    <li><a href="">Steel Import and Export</a></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-          </div>
+        <div id="box-1-footer">
+            <h3 id="styl">TRENDING today</h3>
+            <div id="containt"></div>
+            
+        </div>
+        <div id="box-2-footer">
+            <h3 id="styl">trending topic</h3>
+            <div id="containt2"></div>
+        </div>
+        <div id="box-3-footer">
+            <h3 id="styl">trending on technology</h3>
+            <div id="containt3"></div>
+        </div>       
     </div>
-    <div id="lastt">
+
+    <div id="laster-footer">
     <div id="footer-last">
-        <div id="main_menu">
+        <div id="main_menu-footer">
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">NEWS</a></li>
-                <li><a href="">CORONAVIRUS</a></li>
-                <li><a href="">OPINION</a></li>
-                <li><a href="">BUSINESS</a></li>
-                <li><a href="">SPORT</a></li>
-                <li><a href="">CROSSWORD</a><i class="fa-solid fa-plus"></i></li>
-                <li><a href="">COUPONS</a></li>
+                <li><a href=""></a>HOME</li>
+                <li><a href=""></a>NEWS</li>
+                <li><a href=""></a>CORONAVIRUS</li>
+                <li><a href=""></a>OPINION</li>
+                <li><a href=""></a>BUSINESS</li>
+                <li><a href=""></a>SPORT</li>
+                <li><a href=""></a>CROSSWORD<i class="fa-solid fa-plus"></i></li>
+                <li><a href=""></a>COUPONS</li>
             </ul>
         </div>
     </div>
     <div id="bc_colours">
     <div>
     <div id="footer-last2">
-        <span id="col2">THE SITE</span>
-        <div id="main_menu1">
+        <span id="colom-footer">THE SITE</span>
+        <div id="mainu_menu2-footer">
             
             <ul>
                 <li><a href="">About us</a></li>
@@ -324,8 +341,8 @@
   </div>
   <div>
     <div id="footer-last2">
-        <span id="col2">GROUP SITES</span>
-        <div id="main_menu1">
+        <span id="colom-footer">GROUP SITES</span>
+        <div id="mainu_menu2-footer">
             
             <ul>
                 <li><a href="">The Hindu</a></li>
@@ -353,5 +370,174 @@
 
 </body>
 </html>
+
+<script>
+
+let search = async  () =>{
+    try{
+
+        let query = document.getElementById('query').value
+
+    // let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${query}&key=${api_key}`;
+    let url= `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&pageSize=100&q=${query}&apiKey=1ba529b81c6f42d0aa7ee7a4cd853158`;
+    // let url = `https://newsdata.io/api/1/news?apikey=pub_${api_key}&q=${query}&language=en&category=top`;
+
+    let res = await fetch(url);
+    let data = await res.json();
+
+    console.log(data)
+    localStorage.setItem("news",JSON.stringify(data))
+    window.location.href="searchFdeatils.html";
+    }catch(error){
+        console.log(error)
+    }
+    
+};
+
+let movie=document.getElementById("containt")
+    async function getData()
+{
+    let url= "https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=5&apiKey=1ba529b81c6f42d0aa7ee7a4cd853158";
+    try{
+        let response=await fetch(url)
+    let users=await response.json()
+    append(users.articles)
+    console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getData()
+
+
+function append(data){
+    movie.innerHTML=null
+    data.forEach(function (el){
+        var card = document.createElement('div');
+        card.setAttribute("id","bhu")
+        var span =  document.createElement("span")
+       
+        var ul = document.createElement("ul")
+        ul.setAttribute("id","abc")
+
+        var newsHeading = document.createElement("p");  //NEWSHEADING
+        newsHeading.setAttribute("id","edf")
+        newsHeading.innerHTML = el.title;
+
+        var link = document.createElement('a');
+        link.setAttribute("id","hide")
+        link.href = el.url;
+
+        link.append(newsHeading)
+
+        ul.append(span,link)
+        card.append(ul)
+        movie.append(card)
+
+     
+    })
+}
+
+
+let movie2=document.getElementById("containt2")
+    async function getData2()
+{
+    let url2= "https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=5&apiKey=1ba529b81c6f42d0aa7ee7a4cd853158";
+    try{
+        let response=await fetch(url2)
+    let users=await response.json()
+    append2(users.articles)
+    console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getData2()
+
+function append2(data3){
+    movie2.innerHTML=null
+    data3.forEach(function (el){
+        var card = document.createElement('div');
+        card.setAttribute("id","bhu")
+        var span =  document.createElement("span")
+       
+        var ul = document.createElement("ul")
+        ul.setAttribute("id","abc")
+
+        var newsHeading = document.createElement("p");  //NEWSHEADING
+        newsHeading.setAttribute("id","edf")
+        newsHeading.innerHTML = el.title;
+
+        var link = document.createElement('a');
+        link.setAttribute("id","hide")
+        link.href = el.url;
+
+        link.append(newsHeading)
+
+        ul.append(span,link)
+        card.append(ul)
+        movie2.append(card)
+
+     
+    })
+}
+
+
+let movie3=document.getElementById("containt3")
+    async function getData3()
+{
+    let url3= "https://newsapi.org/v2/top-headlines?country=in&category=technology&pageSize=5&apiKey=1ba529b81c6f42d0aa7ee7a4cd853158";
+    try{
+        let response=await fetch(url3)
+    let users=await response.json()
+    append3(users.articles)
+    console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getData3()
+
+function append3(data3){
+    movie3.innerHTML=null
+    data3.forEach(function (el){
+        var card = document.createElement('div');
+        card.setAttribute("id","bhu")
+        var span =  document.createElement("span")
+       
+        var ul = document.createElement("ul")
+        ul.setAttribute("id","abc")
+
+        var newsHeading = document.createElement("p");  //NEWSHEADING
+        newsHeading.setAttribute("id","edf")
+        newsHeading.innerHTML = el.title;
+
+        var link = document.createElement('a');
+        link.setAttribute("id","hide")
+        link.href = el.url;
+
+        link.append(newsHeading)
+
+        ul.append(span,link)
+        card.append(ul)
+        movie3.append(card)
+
+     
+    })
+}
+
+
+
+
+
+
+
+</script>
 
 <script src="https://kit.fontawesome.com/01d90ed8c9.js" crossorigin="anonymous"></script>
