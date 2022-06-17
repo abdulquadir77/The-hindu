@@ -17,6 +17,7 @@
     var data = JSON.parse(localStorage.getItem('news'))
     console.log(data)
 
+    
     // let image = document.createElement("img")
     // image.src =data.articles[0].urlToImage;
 
@@ -29,7 +30,7 @@
     // document.getElementById("movie").append(image,desc)
 
     // data = JSON.stringify(data);
-
+function appededData(data){
     data.forEach(ele => {
         var card = document.createElement('div');
 
@@ -41,7 +42,7 @@
         
     });
 
-
+}
     // data.forEach(function (el){
     //     var card = document.createElement('div');
 
