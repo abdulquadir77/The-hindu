@@ -205,6 +205,7 @@ function append2(data3) {
   });
 }
 
+
 let movie3 = document.getElementById("containt3");
 async function getData3() {
   let url3 = `https://newsapi.org/v2/top-headlines?country=in&category=technology&pageSize=5&apiKey=${apiikeys}`;
