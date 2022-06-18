@@ -64,6 +64,37 @@ function appended9(dated) {
   });
 }
 
+//Slide bar in home page
+
+var button = document.getElementById("next_home");
+// var button = document.querySelector(.next);
+
+button.onclick = function () {
+  var container = document.getElementById("UsaNews");
+  sideScroll(container, "right", 25, 100, 10);
+};
+
+var back = document.getElementById("prev_home");
+back.onclick = function () {
+  var container = document.getElementById("UsaNews");
+  sideScroll(container, "left", 25, 100, 10);
+};
+
+function sideScroll(element, direction, speed, distance, step) {
+  scrollAmount = 0;
+  var slideTimer = setInterval(function () {
+    if (direction == "left") {
+      element.scrollLeft -= step;
+    } else {
+      element.scrollLeft += step;
+    }
+    scrollAmount += step;
+    if (scrollAmount >= distance) {
+      window.clearInterval(slideTimer);
+    }
+  }, speed);
+}
+
 // -------------------------------------------------------------------------------------------------------------------------
 // Footer Functionality (Santosh)
 

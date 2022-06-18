@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -34,8 +34,8 @@
       /* #container > div > p {
         width: 200px;
       } */
-      #prev,
-      #next {
+      #prev_home,
+      #next_home {
         cursor: pointer;
         position: absolute;
         top: 22%;
@@ -54,14 +54,14 @@
       }
 
       /* Position the "next button" to the right */
-      #next {
+      #next_home {
         right: 0;
         border-radius: 3px 0 0 3px;
       }
 
       /* On hover, add a black background color with a little bit see-through */
-      .prev:hover,
-      .next:hover {
+      #prev_home:hover,
+      #next_home:hover {
         background-color: rgba(0, 0, 0, 0.8);
       }
       #container > div {
@@ -88,17 +88,17 @@
   </body>
 </html>
 <script>
-  var button = document.getElementById("next");
+  var button = document.getElementById("next_home");
   // var button = document.querySelector(.next);
 
   button.onclick = function () {
-    var container = document.getElementById("container");
+    var container = document.getElementById("UsaNews");
     sideScroll(container, "right", 25, 100, 10);
   };
 
-  var back = document.getElementById("prev");
+  var back = document.getElementById("prev_home");
   back.onclick = function () {
-    var container = document.getElementById("container");
+    var container = document.getElementById("UsaNews");
     sideScroll(container, "left", 25, 100, 10);
   };
 
@@ -120,4 +120,4 @@
 <script
   src="https://kit.fontawesome.com/a14ae54690.js"
   crossorigin="anonymous"
-></script> -->
+></script>

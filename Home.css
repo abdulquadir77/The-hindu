@@ -197,7 +197,39 @@ body {
 } */
 
 /* Slidebar Design */
+/* #UsaNews > button {
+  padding: 50px;
+} */
+#prev_home,
+#next_home {
+  cursor: pointer;
+  position: absolute;
+  top: 380%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-right: 25.2%;
+  margin-left: 24.8%;
+  border: none;
+  color: black;
+}
 
+/* Position the "next button" to the right */
+#next_home {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#prev_home:hover,
+#next_home:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 #container3 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -428,18 +460,17 @@ a:hover {
   margin-bottom: 8px;
 }
 
-#UsaNews{
+#UsaNews {
   height: 250px;
   width: 100%;
   margin-top: 20px;
   /* border: 2px solid black; */
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,auto);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   gap: 20px;
-
 }
-#UsaNews{
+#UsaNews {
   height: 250px;
   width: auto;
   /* border: 1px solid blue; */
@@ -450,21 +481,20 @@ a:hover {
   scroll-behavior: unset;
 }
 #UsaNews::-webkit-scrollbar {
-display: none;
-
+  display: none;
 }
-  #UsaNews {
-  -ms-overflow-style: none; 
-  scrollbar-width: none;  
-  }
-#UsaNews > div img{
+#UsaNews {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#UsaNews > div img {
   margin-top: 12px;
   margin-left: 0px;
   height: 135px;
   width: auto;
   /* overflow-y: scroll; */
-} 
-#UsaNews > div > p{
+}
+#UsaNews > div > p {
   margin-left: 20px;
   overflow: hidden;
   font-size: small;
