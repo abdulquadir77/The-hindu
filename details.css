@@ -42,10 +42,15 @@ body {
 
 .container1 > p {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+.container1 > p:nth-child(2) {
+  font-size: 25px;
+  font-weight: 500;
 }
 .container1 > p:nth-child(5) {
   font-size: 25px;
+  opacity: 0.6;
 }
 
 .news1 {
