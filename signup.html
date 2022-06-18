@@ -10,7 +10,7 @@
 <body>
     
 
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
 
 <div id="id01" class="modal">
   
@@ -95,6 +95,8 @@ form.addEventListener("submit", function (event) {
 
   localStorage.setItem("userData", JSON.stringify(data));
   alert("Signup successful. Please Log in");
+  window.location.href="Login.html"
+  
 });
 
 

@@ -1,6 +1,6 @@
 //API append From "NEWS API" ("Abdul Quadir")
 async function myFunction() {
-  let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=280cfd40a460489e99d7b0bf899d28c3`;
+  let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=9ba8dfd0cda84d17abfebbb4e4f05b67`;
   let res = await fetch(url);
   let data = await res.json();
   appendData(data.articles);
@@ -38,7 +38,7 @@ function dataDisplay(data) {
 
 // const apiikeys ="7663403954f442fab1f03856fa1b40ae";
 // const apiikeys ="1c98b8ffa28743e18acacedc5ed185cd";
-const apiikeys ="9ba8dfd0cda84d17abfebbb4e4f05b67";
+const apiikeys = "9ba8dfd0cda84d17abfebbb4e4f05b67";
 // const apiikeys ="280cfd40a460489e99d7b0bf899d28c3";
 
 let searchDetails = async () => {
@@ -62,7 +62,7 @@ let searchDetails = async () => {
 
 let movie = document.getElementById("containt");
 async function getData() {
-  let url =`https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=5&apiKey=${apiikeys}`;
+  let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=5&apiKey=${apiikeys}`;
   try {
     let response = await fetch(url);
     let users = await response.json();
@@ -102,7 +102,7 @@ function append(data) {
 
 let movie2 = document.getElementById("containt2");
 async function getData2() {
-  let url2 =`https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=5&apiKey=${apiikeys}`;
+  let url2 = `https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=5&apiKey=${apiikeys}`;
   try {
     let response = await fetch(url2);
     let users = await response.json();
@@ -142,9 +142,8 @@ function append2(data3) {
 
 let movie3 = document.getElementById("containt3");
 async function getData3() {
-  let url3 =
-    `https://newsapi.org/v2/top-headlines?country=in&category=technology&pageSize=5&apiKey=${apiikeys}`;
-    // `https://newsapi.org/v2/top-headlines?country=us&apiKey=280cfd40a460489e99d7b0bf899d28c3`;
+  let url3 = `https://newsapi.org/v2/top-headlines?country=in&category=technology&pageSize=5&apiKey=${apiikeys}`;
+  // `https://newsapi.org/v2/top-headlines?country=us&apiKey=280cfd40a460489e99d7b0bf899d28c3`;
   try {
     let response = await fetch(url3);
     let users = await response.json();
