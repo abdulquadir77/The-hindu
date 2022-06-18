@@ -4,44 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Unavbar.css">
     <title>navbar</title>
-    <link rel="stylesheet" href="./navbar.css">
     
 </head>
 <body>
-    <div id="imglogo">
-        <img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="">
-        <div id="logotext">
-            <div class="logotext1">LATEST NEWS</div>
-            <div class="logotext2">THURSDAY JUNE 16,2022</div>
-            <div class="logotext3">E-PAPER</div>
+    <section id="container-footer">
+        <div id="socialist-footer">
+            <ul>
+                <li><a href="https://www.facebook.com/thehindu"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/The_Hindu"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/school/the-hindu/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/the_hindu/?ref=badge"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.thehindu.com/newsletter-subscription/"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="https://www.thehindu.com/social/"><i class="fa-solid fa-mobile-screen"></i></a></li>
+                <li><a href="https://epaper.thehindu.com/?utm_source=thehindu&utm_medium=header&utm_campaign=landingpage"></a>e-Paper</li>
+            </ul>
         </div>
-    </div>
-
-    <div id="navbar">
-        <div id="navbar1"></div>
-        <div id="navbar2">
-            <div class="navbar2txt">Todays Paper</div>
-            <div class="navbar2txt">News</div>
-            <div class="navbar2txt">Opinion</div>
-            <div class="navbar2txt">Business</div>
-            <div class="navbar2txt">Sport</div>
-            <div class="navbar2txt">Entertainment</div>
-            <div class="navbar2txt">Crossword+</div>
+        <div id="footer-logo">
+            <a href="" ><img src="" alt=""></a>
         </div>
-        <div id="navbar3"></div>
-        <div id="navbar4">
-            <div class="navbutn">
-                <button class="navbutn1" >GET TRIAL</button>
-            </div>
-            <div class="navbutn">
-                <button class="navbutn2">SUBSCRIBE NOW</button>
-            </div>
-            <div class="navbutn">
-                <button class="navbutn3">LOG IN</button>
+        <div id="search-box_footer">
+                <input id="query" type="text" placeholder="Search here...">
+                <button  onclick="search()" ><i class="fa-solid fa-magnifying-glass" ></i></button>
+                <!-- <button <i class="fa-solid fa-magnifying-glass"></i></i></button> --> 
+        </div>
+    </section>
+        <div id="imglogo">
+            <img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="">
+            <div id="logotext">
+                <div class="logotext1">LATEST NEWS</div>
+                <div class="logotext2">THURSDAY JUNE 16,2022</div>
+                <div class="logotext3">E-PAPER</div>
             </div>
         </div>
-    </div>
+    
+        <div id="navbar-bottom">
+            <div id="navbar1">
+                <!-- Add menu bar code -->
+            </div>
+            <div id="navbar2">
+                <ul>
+                    <li>
+                        <a href="#">Todays Paper</a>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="#">Opinion</a>
+                    </li>
+                    <li>
+                        <a href="#">Business</a>
+                    </li>
+                    <li>
+                        <a href="#">Entertainment</a>
+                    </li>
+                    <li>
+                        <a href="#">Crossword+</a>
+                    </li>
+                    <li>
+                        <a href="#">Scinece</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="navbar4">
+                <div class="navbutn">
+                    <button class="navbutn1" >GET TRIAL</button>
+                </div>
+                <div class="navbutn">
+                    <button class="navbutn2">SUBSCRIBE NOW</button>
+                </div>
+                <div class="navbutn">
+                    <button class="navbutn3">LOG IN</button>
+                </div>
+            </div>
+        </div>
+    
+    
     
 </body>
 </html>
+<script src="https://kit.fontawesome.com/01d90ed8c9.js" crossorigin="anonymous"></script>
