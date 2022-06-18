@@ -10,7 +10,12 @@ body {
   margin: auto;
   height: auto;
 }
+#line {
+  width: 100%;
+  opacity: 0.6;
+}
 .container {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(7, auto);
@@ -118,7 +123,7 @@ body {
   margin-top: -27px;
 }
 
-img {
+#footer-logo > a > img {
   width: 250px;
 }
 #search-box_footer {
