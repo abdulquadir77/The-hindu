@@ -38,8 +38,8 @@ function dataDisplay(data) {
 
 // const apiikeys ="7663403954f442fab1f03856fa1b40ae";
 // const apiikeys ="1c98b8ffa28743e18acacedc5ed185cd";
-const apiikeys ="9ba8dfd0cda84d17abfebbb4e4f05b67";
-// const apiikeys ="280cfd40a460489e99d7b0bf899d28c3";
+// const apiikeys ="9ba8dfd0cda84d17abfebbb4e4f05b67";
+const apiikeys ="280cfd40a460489e99d7b0bf899d28c3";
 
 let searchDetails = async () => {
   try {
@@ -185,15 +185,15 @@ function append3(data3) {
 
 
 
-async function getDaat9()
+async function getData14()
 {
-    let uls9= `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=${apiikeys}`;
-    // let uls9= `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=28`;
+    let urls14= `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=${apiikeys}`;
+    // let urls14= `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=28`;
     ;
     try{
-        let response=await fetch(uls9)
+        let response=await fetch(urls14)
     let users=await response.json()
-    appended9(users.articles)
+    append14(users.articles)
     // console.log(users.articles)
     }
    catch(err)
@@ -201,10 +201,10 @@ async function getDaat9()
        console.log(err)
    }
 }
-getDaat9()
+getData14()
 
 
-function appended9(dated){
+function append14(dated){
     movie.innerHTML=null
     let count = 1;
   dated.forEach((el) => {
@@ -220,7 +220,7 @@ function appended9(dated){
     image.src = el.urlToImage;
     
     let para = document.createElement("p");
-    para.innerText = el.title;
+    para.innerText = el.description;
 
         var link = document.createElement('a');
         link.setAttribute("id","hide")
