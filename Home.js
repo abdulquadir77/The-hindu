@@ -181,3 +181,55 @@ function append3(data3) {
     movie3.append(card);
   });
 }
+
+
+
+
+async function getDaat9()
+{
+    let uls9= `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=${apiikeys}`;
+    // let uls9= `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=28`;
+    ;
+    try{
+        let response=await fetch(uls9)
+    let users=await response.json()
+    appended9(users.articles)
+    // console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getDaat9()
+
+
+function appended9(dated){
+    movie.innerHTML=null
+    let count = 1;
+  dated.forEach((el) => {
+    // console.log(el);
+    let card2 = document.createElement("div");
+    card2.setAttribute("class",`news${count}`);
+    card2.addEventListener("click", function () {
+      dataDisplay(el);
+    });
+    count++;
+
+    let image = document.createElement("img");
+    image.src = el.urlToImage;
+    
+    let para = document.createElement("p");
+    para.innerText = el.title;
+
+        var link = document.createElement('a');
+        link.setAttribute("id","hide")
+        link.href = el.url;
+
+        link.append(para)
+
+    card2.append(image,link);
+    document.getElementById("UsaNews").append(card2);
+  });
+
+}
