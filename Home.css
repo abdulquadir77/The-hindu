@@ -4,7 +4,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Vollkorn", serif;
   font-family: "Barlow Condensed", sans-serif;
   font-family: "Exo 2", sans-serif;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -182,17 +181,15 @@ body {
 .news20:hover {
   text-decoration: underline;
   cursor: pointer;
-  
 }
-#title{
+/* #title{
   margin-top: -10px;
   background-color: #000;
   color: white;
 }
 #title:hover{
   color: purple;
-}
-
+} */
 
 /* Slidebar Design */
 
@@ -227,8 +224,8 @@ body {
   margin-top: -27px;
 }
 
-img {
-  width: 250px;
+#footer-logo > img {
+  width: 200px;
 }
 #search-box_footer {
   margin-top: -27.5px;
@@ -268,20 +265,18 @@ input[type="text"] {
   gap: 10px;
   width: auto;
   background-color: #fff;
-  
 }
 #box-1-footer {
   height: auto;
   width: 38%;
   padding: 12px;
-  border-right: 1px dotted #CCC
-  
+  border-right: 1px dotted #ccc;
 }
 #box-2-footer {
   height: auto;
   width: 30%;
   padding: 20px;
-  border-right: 1px dotted #CCC
+  border-right: 1px dotted #ccc;
 }
 #box-3-footer {
   height: auto;
