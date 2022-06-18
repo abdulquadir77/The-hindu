@@ -123,7 +123,7 @@ body {
   margin-top: -27px;
 }
 
-img {
+#footer-logo > a > img {
   width: 250px;
 }
 #search-box_footer {
