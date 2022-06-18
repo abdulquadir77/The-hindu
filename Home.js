@@ -140,6 +140,7 @@ function append2(data3) {
   });
 }
 
+
 let movie3 = document.getElementById("containt3");
 async function getData3() {
   let url3 =
