@@ -36,14 +36,17 @@ function dataDisplay(data) {
 // -------------------------------------------------------------------------------------------------------------------------
 // Footer Functionality (Santosh)
 
-const apiikeys ="7663403954f442fab1f03856fa1b40ae";
+// const apiikeys ="7663403954f442fab1f03856fa1b40ae";
+// const apiikeys ="1c98b8ffa28743e18acacedc5ed185cd";
+const apiikeys ="9ba8dfd0cda84d17abfebbb4e4f05b67";
+// const apiikeys ="280cfd40a460489e99d7b0bf899d28c3";
 
 let searchDetails = async () => {
   try {
     let query = document.getElementById("query").value;
 
     // let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${query}&key=${api_key}`;
-    let url = `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&pageSize=100&q=${query}&apiKey=${apiikeys}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&pageSize=70&q=${query}&apiKey=${apiikeys}`;
     // let url = `https://newsdata.io/api/1/news?apikey=pub_${api_key}&q=${query}&language=en&category=top`;
 
     let res = await fetch(url);
@@ -64,7 +67,7 @@ async function getData() {
     let response = await fetch(url);
     let users = await response.json();
     append(users.articles);
-    console.log(users.articles);
+    // console.log(users.articles);
   } catch (err) {
     console.log(err);
   }
@@ -104,7 +107,7 @@ async function getData2() {
     let response = await fetch(url2);
     let users = await response.json();
     append2(users.articles);
-    console.log(users.articles);
+    // console.log(users.articles);
   } catch (err) {
     console.log(err);
   }
@@ -141,11 +144,12 @@ let movie3 = document.getElementById("containt3");
 async function getData3() {
   let url3 =
     `https://newsapi.org/v2/top-headlines?country=in&category=technology&pageSize=5&apiKey=${apiikeys}`;
+    // `https://newsapi.org/v2/top-headlines?country=us&apiKey=280cfd40a460489e99d7b0bf899d28c3`;
   try {
     let response = await fetch(url3);
     let users = await response.json();
     append3(users.articles);
-    console.log(users.articles);
+    // console.log(users.articles);
   } catch (err) {
     console.log(err);
   }

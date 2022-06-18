@@ -3,139 +3,2213 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Exo+2:wght@700&family=Fira+Sans+Condensed:ital,wght@0,500;1,500&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="movie"></div>
-    <!-- <div id="sideMovie"> -->
-    </div>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Exo+2:wght@700&family=Fira+Sans+Condensed:wght@500&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hindu</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./menu.css">
+        
+    <style>
+        /* * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+          } */
+        body{
+            width: 70%;
+            margin: auto;
+            background: #f5f5f5;
+        }
+        #photo-div{
+            height: 400px;
+            width: 66%;
+            /* border: 1px solid red; */
+        }
+        #heading{
+            height: 25%;
+            width: 100%;
+            gap: 2px;
+            border: 1px solid black;
+            background-color: white;
+
+        }
+        #head-photo{
+            height: 76%;
+            width: 100%; 
+             /* border: 1px solid green; */
+
+        }
+        #detailedsa{
+            height: 240px;
+            width: 66%;
+            background-color: white;
+            /* border: 1px solid brown; */
+        }
+        #card{
+            height: 300px;
+            width: 66%;
+            margin-top: 29px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,auto);
+            gap: 15px;
+            /* border: 1px solid red; */
+        }
+        #card div{
+            height: 120px;
+            width: auto;
+            /* border: 1px solid blue; */
+            padding: 8px;
+            background-color: white;
+            display: flex;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            
     
+        }
+        #card > div img{
+            margin-left: -10px;
+            margin-top: -8px;
+            height: 118px;
+            width: 60%;
+        } 
+        #card > div > p{
+            margin-left: 20px;
+            overflow: hidden;
+            font-size: small;
+        }
+        
+        #sidebar{
+            margin-top: -967px;
+            margin-left: 68%;
+            height: 940px;
+            width: 300px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            /* border: 1px solid red; */
+        }
+        #sidebar1{
+            height: 33%;
+            width: 100%;
+            /* border: 1px solid black; */
+            margin-bottom: 18px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+        #sidebar2{
+            height: 33%;
+            width: 100%;
+            /* border: 1px solid black; */
+            margin-bottom: 17px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #sidebar3{
+            height: 30%;
+            width: 100%;
+            /* border: 1px solid black; */
+        }
+
+        #video-title{
+            height: 90%;
+            width: 100%;
+            margin-top: 20px;
+            /* border: 1px solid red; */
+        }
+        #video-detils{
+            height: 230px;
+            width: 100%;
+            margin-top: 40px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: flex-start;
+            gap: 2px;
+            overflow-y: scroll;
+            overflow-y: hidden;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+        #video-detils::-webkit-scrollbar {
+         display: none;
+
+        }
+            #video-detils {
+            -ms-overflow-style: none; 
+            scrollbar-width: none;  
+            }
+        #last-grid{
+            height: 250px;
+            width: 100%;
+            margin-top: 20px;
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,auto);
+            gap: 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+        #last-grid{
+            height: 250px;
+            width: auto;
+            /* border: 1px solid blue; */
+            background-color: white;
+            display: flex;
+            overflow-y: scroll;
+            overflow-y: hidden;
+            scroll-behavior: unset;
+        }
+        #last-grid::-webkit-scrollbar {
+         display: none;
+
+        }
+            #last-grid {
+            -ms-overflow-style: none; 
+            scrollbar-width: none;  
+            }
+        #last-grid > div img{
+            margin-top: 12px;
+            margin-left: 0px;
+            height: 135px;
+            width: auto;
+            /* overflow-y: scroll; */
+        } 
+        #last-grid > div > p{
+            margin-left: 20px;
+            overflow: hidden;
+            font-size: small;
+            
+            /* font-weight: bolder; */
+        }
+        
+        
+        #lastpagelike{
+            height: 940px;
+            /* width: %; */
+            margin-top: 20px;
+            /* border: 1px solid red; */
+            /* background-color: white; */
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,auto);
+            gap: 20px;
+            padding: 10px;
+            
+
+        }
+        #lastpagelike >div{
+            height: 135px;
+            /* width: 10%; */
+            background-color: white;
+            
+            /* border: 1px solid red; */
+            display: flex;
+
+        }
+        #lastpagelike img{
+            /* height: 135px; */
+            margin-left: 0%;
+
+        }
+        #lastpagelike p{
+            padding: 10px;
+        }
+        #pagination{
+            height: 70px;
+            width: 100%;
+            margin-top: 20px;
+            /* border: 1px solid red; */
+        }
+        #pagin-detils{
+            height: 70px;
+            width: 100%;
+            margin-top: 20px;
+            /* border: 1px solid red; */
+        }
+        #line{
+        margin-left: 28%;
+        border: 0;
+        height: 1.5px;
+        background: #333;
+        width: 70%;
+        }
+        #line2{
+        margin-left: 150px;
+        border: 0;
+        height: 1.5px;
+        background: #333;
+        width: 80%;
+        }
+        #line3{
+            margin-left: 110px;
+            border: 0;
+            height: 1.5px;
+            background: #333;
+            width: 80%;
+        }
+        #text{
+            margin-top: 18%;
+            color: #133b5a;
+             font-weight: 600;
+             font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        #text2{
+            margin-top: 3%;
+            color: #133b5a;
+             font-weight: 600;
+             font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+
+        }
+        #text3{
+            margin-top: 3%;
+            color: #133b5a;
+             font-weight: 600;
+             font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+
+        }
+        #text4{
+            /* margin-top: 1%; */
+            color: #133b5a;
+             font-weight: 600;
+             margin-top: 0px;
+             font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+
+        }
+        #pagination {
+        display: inline-block;
+        margin-left: 7px;
+        }
+
+        #pagination a {
+        color: black;
+        float: left;
+        padding: 10px 18px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        }
+
+        #pagination a.active {
+        background-color: #133b5a;
+        color: white;
+        /* border: 1px solid #133b5a; */
+        }
+
+        #pagination a:hover:not(.active) {background-color: #133b5a;}
+
+
+        #heading >h3{
+            margin-top: 3%;
+        }
+        #head-photo img{
+            margin-left: 0px;
+            width: 100%;
+             height: 100%;
+        }
+        #sidebar1  img{
+            margin-left: 0px;
+            width: 100%;
+             height: 100%;
+        }
+        #sidebar2 img{
+            margin-left: 0px;
+            width: 100%;
+             height: 100%;
+        }
+        #sidebar3 img{
+            margin-left: 0px;
+            width: 100%;
+             height: 100%;
+        }
+        #hide{
+            margin-left: 20px;
+            font-size: 12px;
+            overflow: hidden;
+            font-weight: 100;
+            text-decoration: none;
+        }
+
+        #prev {
+            margin-top: -50%;
+            cursor: pointer;
+            position: absolute;
+            top: 275%;
+            width: auto;
+            padding: 10px;
+            margin-top: 6px;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            border: none;
+            }
+            #next{
+                
+                cursor: pointer;
+            position: absolute;
+            top: 270%;
+            width: auto;
+            padding: 10px;
+            margin-top: 34px;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            border: none;
+            }
+            #next {
+            right: 0;
+            margin-right: 158px;
+            border-radius: 3px 0 0 3px;
+            }
+            #prev:hover {
+            background-color: rgba(0,0,0,0.8);
+            }
+            #next:hover{
+                background-color: rgba(0,0,0,0.8);
+            }
+            #title{
+                padding: 10px;
+                font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+            }
+
+            #youtube-text{
+            font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+            margin-top: -5px;
+            background-color: black;
+            color: white;
+
+            }
+            #youtube-text:hover{
+                color: aqua;
+            }
+
+            #sports{
+            height: 550px;
+            width: 100%;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,auto);
+            gap: 15px;
+            /* border: 1px solid red; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #sports div{
+            height: 120px;
+            width: auto;
+            /* border: 1px solid blue; */
+            padding: 8px;
+            background-color: white;
+            display: flex;
+            
+    
+        }
+        #sports > div img{
+            margin-left: -10px;
+            margin-top: -8px;
+            height: 118px;
+            width: 60%;
+        } 
+        #sports > div > p{
+            margin-left: 20px;
+            overflow: hidden;
+            font-size: small;
+        }
+
+        #Health{
+            height: 550px;
+            width: 100%;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,auto);
+            gap: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            /* border: 1px solid red; */
+        }
+        #Health div{
+            height: 120px;
+            width: auto;
+            /* border: 1px solid blue; */
+            padding: 8px;
+            background-color: white;
+            display: flex;
+            
+    
+        }
+        #Health > div img{
+            margin-left: -10px;
+            margin-top: -8px;
+            height: 118px;
+            width: 60%;
+        } 
+        #Health > div > p{
+            margin-left: 20px;
+            overflow: hidden;
+            font-size: small;
+        }
+
+        #entertainment{
+            height: 550px;
+            width: 100%;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,auto);
+            gap: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            /* border: 1px solid red; */
+        }
+        #entertainment div{
+            height: 120px;
+            width: auto;
+            /* border: 1px solid blue; */
+            padding: 8px;
+            background-color: white;
+            display: flex;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            
+    
+        }
+        #entertainment > div img{
+            margin-left: -10px;
+            margin-top: -8px;
+            height: 118px;
+            width: 60%;
+        } 
+        #entertainment > div > p{
+            margin-left: 20px;
+            overflow: hidden;
+            font-size: small;
+        }
+
+        #UsaNews{
+            height: 250px;
+            width: 100%;
+            margin-top: 20px;
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,auto);
+            gap: 20px;
+
+        }
+        #UsaNews{
+            height: 250px;
+            width: auto;
+            /* border: 1px solid blue; */
+            background-color: white;
+            display: flex;
+            overflow-y: scroll;
+            overflow-y: hidden;
+            scroll-behavior: unset;
+        }
+        #UsaNews::-webkit-scrollbar {
+         display: none;
+
+        }
+            #UsaNews {
+            -ms-overflow-style: none; 
+            scrollbar-width: none;  
+            }
+        #UsaNews > div img{
+            margin-top: 12px;
+            margin-left: 0px;
+            height: 135px;
+            width: auto;
+            /* overflow-y: scroll; */
+        } 
+        #UsaNews > div > p{
+            margin-left: 20px;
+            overflow: hidden;
+            font-size: small;
+            /* font-weight: bolder; */
+        }
+        #iframeStyle{
+            border: none;
+            padding: 0px;
+            
+        }
+
+        /* ----------------------F--O--O--T--E--R----STYLE-------------------------------------------------------------------------------------------------------------- */
+        
+
+        
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+          }
+        body{
+            width:75%;
+            margin: auto;
+            background: #f5f5f5;
+        }
+        #container-footer{
+            border-bottom: solid 1px #c8c8c3;
+            margin-top: 40px;
+            position: relative;
+        }
+        #socialist-footer >ul>li{
+            color: #5a5a5a;
+            border-right: solid 1px #c8c8c3;
+            
+            height: 28px;
+            display: inline-block;
+            padding: 0px 12px 3px;
+            height: fit-content;
+            
+        }
+        #socialist-footer >ul>li>a{
+            cursor: pointer;
+        }
+        #footer-logo{
+            text-align: center;
+            margin-top: -27px;
+        }
+        
+        img{
+            margin-left: 10%;
+            width: 250px;
+        }
+        #search-box_footer{
+            margin-top: -27.5px;
+            position: absolute;
+            right: 0;   
+        }
+        input[type=text] {
+            background: #f5f5f5;
+            border: none;
+            font-size: 12px;
+            font-weight: 600;
+            height: 28px;
+            padding: 0 10px;
+            border-left: 1px solid #CCC;
+            outline:none;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+       }
+       .fa-magnifying-glass{    
+            float: right;
+            display: block;
+            font-size: 14px;
+            line-height: 14px;
+            margin-left: 14px;
+            padding: 5px 10px 0 0;
+            background: none;
+            color: #000;
+            border: none;
+       }
+
+       /* <!------------------------------Mini nav bar-----------------------------------------------> */
+   
+       #site-footer{
+        display: flex;
+        height: 250px;
+        gap: 10px;
+        background-color: #FFF;
+        
+
+   }
+   #box-1-footer{
+    margin-left: 10px;
+    margin-top: 10px;
+    border-right: 1px dotted #CCC
+    
+   }
+   #box-2-footer{
+    margin-top: 10px;
+    height: auto;
+    width: 30%;
+    border-right: 1px dotted #CCC
+
+   }
+   #box-3-footer{
+    margin-top: 10px;
+    height: auto;
+    width: 31%;
+
+   }
+   
+   #column-footer {
+    
+        width: 30%;
+        /* padding: 30px; */
+        border-right: dotted 1px #525252;
+        display: inline-block;
+    }
+  ul>li{
+    font-family: 'Barlow Condensed', sans-serif;
+        font-family: 'Exo 2', sans-serif;
+        font-family: 'Fira Sans Condensed', sans-serif;
+        font-family: 'Titillium Web', sans-serif;
+
+  }
+  ul>li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  } 
+  a:hover{
+    text-decoration: overline;
+  }
+   #column2-footer {
+        /* padding: 30px; */
+        display: inline-block;
+        height: 100%;
+        margin: 0 20px;
+    }
+    #column2-footer >ul >li{
+        overflow: hidden;
+   }
+   #column2-footer >ul +li:hover{
+    text-decoration: underline;
+
+    }
+    span{
+        display: block;
+        color: #133b5a;
+        letter-spacing: 1.2px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-family: 'Exo 2', sans-serif;
+        font-family: 'Fira Sans Condensed', sans-serif;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    a{
+        color: #7e7c76;
+        line-height: 24px;
+        font-weight: 597;
+        font-size: smaller;
+        text-transform: capitalize;
+        text-decoration: none;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-family: 'Exo 2', sans-serif;
+        font-family: 'Fira Sans Condensed', sans-serif;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    #laster-footer{
+        background: #eaeaea;
+        color: #5a5a5a;
+    }
+    #footer-last{
+        float: left;
+        width: 100%;
+    }
+    #main_menu-footer{
+        margin-top: 15px;
+        color: #5a5a5a;
+        padding-bottom: 5px;
+    }
+    #main_menu-footer >ul>li{
+        color: #5a5a5a;
+        display: inline-block;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        font-size:small;
+        font-weight: 600;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-family: 'Exo 2', sans-serif;
+        font-family: 'Fira Sans Condensed', sans-serif;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    #main_menu-footer >ul>li:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    #footer-last2{
+        font-size: 11.5px;
+    }
+    #colom-footer{
+        margin-left: 30px;
+
+    }
+    #mainu_menu2-footer{
+        margin-left: 9%;
+        margin-top: -20px;
+        text-align: center;
+        float: left;
+        color: #5a5a5a;
+    }
+    #mainu_menu2-footer >ul>li{
+        display: inline-block;  
+    }
+    #mainu_menu2-footer >ul>li>a{
+        margin-left: 10px;
+        color: #7e7c76;
+        padding: 0 7px ;
+        border-right: 1px solid #7e7c76;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: -.09px;
+        
+    }
+    #footer_finish{
+        text-align: center;
+    }
+    .fa-plus{
+        font-size: 10px;
+    }
+    
+    #edf{
+        text-overflow: ellipsis;
+        overflow: hidden;     
+        white-space: nowrap;
+    }
+    #styl{
+        color: #133b5a;
+        letter-spacing: 1.2px;
+        font-family: "Fira Sans",sans-serif;
+        text-transform: uppercase;
+        font-size: small;
+        overflow: hidden; 
+        
+    }
+    .fa-magnifying-glass{
+        background: none;
+        border: none;
+
+    }
+    #containt2{
+        overflow: hidden;
+    }
+
+
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <section id="container-footer">
+        <div id="socialist-footer">
+            <ul>
+                <li ><a style="color: #5a5a5a" href="https://www.facebook.com/thehindu"><i class="fa-brands fa-facebook-f" style="color: #5a5a5a"></i></a></li>
+                <li><a href="https://twitter.com/The_Hindu"><i class="fa-brands fa-twitter" style="color: #5a5a5a"></i></a></li>
+                <li><a href="https://www.linkedin.com/school/the-hindu/"><i class="fa-brands fa-linkedin-in" style="color: #5a5a5a"></i></a></li>
+                <li><a href="https://www.instagram.com/the_hindu/?ref=badge"><i class="fa-brands fa-instagram" style="color: #5a5a5a"></i></a></li>
+                <li><a href="https://www.thehindu.com/newsletter-subscription/"><i class="fa-solid fa-envelope" style="color: #5a5a5a"></i></a></li>
+                <li><a href="https://www.thehindu.com/social/"><i class="fa-solid fa-mobile-screen"></i style="color: #5a5a5a"></a></li>
+                <li><a href="https://epaper.thehindu.com/?utm_source=thehindu&utm_medium=header&utm_campaign=landingpage"></a>e-Paper</li>
+            </ul>
+        </div>
+        <div id="footer-logo">
+            <a href="" ><img src="" alt=""></a>
+        </div>
+        <div id="search-box_footer">
+                <input id="query" type="text" placeholder="Search here...">
+                <button  onclick="search()" <i class="fa-solid fa-magnifying-glass" ></i></button>
+                <!-- <button <i class="fa-solid fa-magnifying-glass"></i></i></button> --> 
+        </div>
+    </section>
+        <div id="imglogo">
+            <img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="">
+            <div id="logotext">
+                <div class="logotext1">LATEST NEWS</div>
+                <div class="logotext2">THURSDAY JUNE 16,2022</div>
+                <div class="logotext3">E-PAPER</div>
+            </div>
+        </div>
+    
+        <div id="navbar-bottom">
+            <div id="navbar1">
+                <!-- Add menu bar code -->
+            </div>
+            <div id="navbar2">
+                <ul>
+                    <li>
+                        <a href="#">Todays Paper</a>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="#">Opinion</a>
+                    </li>
+                    <li>
+                        <a href="#">Business</a>
+                    </li>
+                    <li>
+                        <a href="#">Entertainment</a>
+                    </li>
+                    <li>
+                        <a href="#">Crossword+</a>
+                    </li>
+                    <li>
+                        <a href="#">Scinece</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="navbar4">
+                <div class="navbutn">
+                    <button class="navbutn1" >GET TRIAL</button>
+                </div>
+                <div class="navbutn">
+                    <button class="navbutn2">SUBSCRIBE NOW</button>
+                </div>
+                <div class="navbutn">
+                    <button class="navbutn3">LOG IN</button>
+                </div>
+            </div>
+        </div>
+    
+
+        <!-- -----------------------M_E_N_U-------B_A_R------------------------------------ -->
+    
+        <div id="menu-button">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <div id="myNav" class="overlay">
+                <div id="popup-menu" class="overlay-content">
+                    <div id="top-menu">
+                        <div id="close_this">
+                            <!-- add homepage in both link -->
+                            <a href="javascript:void(0)" onclick="closeNav()" style="font-size: 50px;text-decoration: none;">&times;</a>
+                            <a href="javascript:void(0)" onclick="closeNav()">CLOSE THIS MENU</a>
+                        </div>
+                        <div id="trending">
+                            <ul>
+                                <!-- connect trending news page here -->
+                                <li style="color: #f8d01c;text-decoration:none;">TRENDING TODAY</li>
+                                <li>CHENNAI</li>
+                                <li>HYDERABAD</li>
+                                <li>BENGALURU</li>
+                                <li>BENGALURU</li>
+                                <li>VIDEOS</li>
+                                <li>ENTERTAINMENT</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-menu clear">
+                            <ul id="coloumn1">
+                                <li>
+                                    <a href="#">Subscription</a>
+                                </li>
+                                <li>
+                                    <a href="#">Latest News</a>
+                                </li>
+                                <li>
+                                    <a href="#">Today's Paper</a>
+                                </li>
+                                <li>
+                                    <a href="#">epaper</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.thehindu.com/housing-real-estate-india/">
+                                        <img src="https://www.thehindu.com/theme/images/th-online/housing.png" alt="Housing">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Coupons</a>
+                                </li>
+                                <li>
+                                    <a href="#">News</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">NATIONAL</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">INTERNATIONAL</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Coronavirus</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">VIDEO & PODCAST</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">EXPERT SPEAK</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ALL REPORTS</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">States</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">ANDHRA PRADESH</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">KARNATAKA</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">KERALA</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">TAMIL NADU</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">TELANGANA</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">OTHER STATES</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Business</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">AGRI-BUSINESS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">INDUSTRY</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ECONOMY</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">MARKETS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">BUDGET 2022</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Real Estate</a>
+                                </li>
+                            </ul>
+                            <ul id="coloumn1">
+                                <li>
+                                    <a href="#">Crossword+ "Free <br>Games"</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cities</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">BENGALURU</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">CHENNAI</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">COIMBATORE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">DELHI</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">HYDERABAD</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">KOCHI</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">KOLKATA</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">MUMBAI</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">KOZHIKODE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">MADURAI</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">MANGALURU</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">PUDUCHERRY</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">THIRUVANANTHAPURAM</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">TIRUCHIRAPALLI</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">VIJAYAWADA</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">VISAKHAPATNAM</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Elections</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">GOA</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">MANIPUR</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">PUNJAB</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">UTTAR PRADESH</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">UTTARAKHAND</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul id="coloumn1">
+                                <li>
+                                    <a href="#">Opinion</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">EDITORIAL</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">LEAD</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">COMMENT</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">COLUMNS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">INTERVIEW</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">CARTOON</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">OPEN PAGE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">READERS' EDITOR</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">LETTERS</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Sport</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">ATHLETICS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">CRICKET</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FOOTBALL</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">HOCKEY</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">MOTORSPORT</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">OTHER SPORTS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">RACES</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">TENNIS</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul id="coloumn1">
+                                <li>
+                                    <a href="#">Entertainment</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">ART</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">DANCE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">MOVIES</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">MUSIC</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">REVIEWS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">THEATRE</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Society</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">FAITH</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">HISTORY & CULTURE</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Books</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">REVIEWS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">AUTHORS</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Children</a>
+                                </li>
+                            </ul>
+                            <ul id="coloumn1">
+                                <li>
+                                    <a href="#">Life & Style</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">FASHION</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FITNESS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FOOD</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">MOTORING</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">TRAVEL</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">HOMES AND GARDENS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">LUXURY</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Technology</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">GADGETS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">INTERNET</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Sci-Tech</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">SCIENCE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">TECHNOLOGY</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">HEALTH</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">AGRICULTURE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ENVIRONMENT</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul id="coloumn1">
+                                <li>
+                                    <a href="#">Education</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">CAREERS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">COLLEGES</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">SCHOOLS</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Multimedia</a>
+                                    <ul class="sub-menu2">
+                                        <li>
+                                            <a href="#">PHOTOS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">VIDEOS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">PODCAST</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Data</a>
+                                </li>
+                                <li>
+                                    <a href="#">Specials</a>
+                                </li>
+                                <li>
+                                    <a href="#">Resources</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tags</a>
+                                </li>
+                                <li>
+                                    <a href="#">Theatre - Fest</a>
+                                </li>
+                                <li>
+                                    <a href="#">November Fest</a>
+                                </li>
+                                <li>
+                                    <a href="#">Lit for Life</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tamil Nadu Smiling</a>
+                                </li>
+                                <li>
+                                    <a href="#">Newsletter</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div id="bottom-bar">
+                        <section id="bottom-section">
+                            <div id="section-div1">
+                                <ul>
+                                    <li>ARCHIVE</li>
+                                    <li>CLASSIFIEDS</li>
+                                    <li>EBOOKS</li>
+                                    <li>SUBSCRIBE</li>
+                                    <li>SOCIAL</li>
+                                    <li>ABOUT US</li>
+                                </ul>
+                            </div>
+                            <div id="section-div2">
+                                <ul>
+                                    <li>CONNECT WITH US</li>
+                                    <li><a style="text-decoration: none;" href="https://www.facebook.com/thehindu">
+                                        <i style="background: #133b5a;" class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                    <li><a style="text-decoration: none;background: #133b5a;" href="https://twitter.com/The_Hindu">
+                                        <i style="background: #133b5a;" class="fa-brands fa-twitter"></i>
+                                    </a></li>
+                                    <li><a style="text-decoration: none;background: #133b5a;" href="https://www.linkedin.com/school/the-hindu/">
+                                        <i style="background: #133b5a;" class="fa-brands fa-linkedin-in"></i>
+                                    </a></li>
+                                    <li><a style="text-decoration: none;background: #133b5a;" href="https://www.instagram.com/the_hindu/?ref=badge&__coig_restricted=1">
+                                        <i style="background: #133b5a;" class="fa-brands fa-instagram"></i>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div id="close_this-end">
+                        <!-- add homepage in both link -->
+                        <div id="close_this">
+                            <!-- add homepage in both link -->
+                            <a href="javascript:void(0)" onclick="closeNav()" style="font-size: 50px;text-decoration: none;">&times;</a>
+                            <a href="javascript:void(0)" onclick="closeNav()">CLOSE THIS MENU</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+ 
+    <div id="photo-div">
+        <div id="heading"></div>
+        <div id="head-photo"></div>
+    </div>
+    <div id ="detailedsa"></div>
+    <h2 id="text4">Internation news</h2>
+    <hr id="line" >
+    <div id="card">
+    </div>
+    <div id="sidebar">
+        <div id="sidebar1"></div>
+        <div id="sidebar2"></div>
+        <div id="sidebar3"></div>
+    </div>
+
+    <div id="video-title">
+        
+        <h2 id="text">Internation Multimedia</h2>
+        <hr id="line" >
+        
+    </div>
+    <div id="video-detils"></div>
+
+    <h2 id="text2">National</h2>
+        <hr id="line3" >
+
+    <div id="last-grid">
+     <div id="st"></div>
+
+        
+    </div>
+
+    
+    <button id="prev" type="button"><i class="fa-solid fa-caret-left"></i></button>
+    <button id="next" type="button"><i class="fa-solid fa-caret-right"></i></button>
+
+    <h2 id="text3">Sports</h2>
+        <hr id="line2" >
+
+        <div id="sports"></div>
+
+        <h2 id="text3">Health</h2>
+        <hr id="line2" >
+
+        <div id="Health"></div>
+
+        <h2 id="text3">Entertainment</h2>
+        <hr id="line2" >
+
+        <div id="entertainment"></div>
+
+    <h2 id="text3">Other Articles</h2>
+        <hr id="line2" >   
+    <div id="lastpagelike">
+        <!-- <div></div> -->
+        <!-- <div></div> -->
+        <!-- <div></div> -->
+        <!-- <div></div> -->
+        <!-- <div></div> -->
+        <!-- <div></div> -->
+        <!-- <div></div> -->
+        <!-- <div></div> -->
+        <!-- <div></div> -->
+        <!-- <div></div> -->
+        <!-- <div></div> -->
+        <!-- <div></div> -->
+    </div>
+    <div>
+        <h2 id="text3">USA HEADLINES</h2>
+        <hr id="line2" 
+    </div>
+
+    <!-- <h2 id="text">Entertainment</h2>
+        <hr id="line2"  -->
+    
+    
+    <div id="UsaNews"></div>
+        
+    </div>    
+    <div id="pagination">    
+        <a href="#" class="active" style="background-color: gray;" >First </a>
+        <a href="#" class="active" style="background-color: gray;">Prev</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+        <a href="#">11</a>
+        <a href="#">12</a>
+        <a href="#">13</a>
+        <a href="#">14</a>
+        <a href="#">15</a>
+        <a href="#" class="active">NEXT</a>
+</div> 
+
+<section id="container-footer">
+    <div id="socialist-footer">
+        <ul>
+            <li><a href="https://www.facebook.com/thehindu"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/The_Hindu"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/school/the-hindu/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.instagram.com/the_hindu/?ref=badge"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.thehindu.com/newsletter-subscription/"><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href="https://www.thehindu.com/social/"><i class="fa-solid fa-mobile-screen"></i></a></li>
+            <li><a href="https://epaper.thehindu.com/?utm_source=thehindu&utm_medium=header&utm_campaign=landingpage"></a>e-Paper</li>
+        </ul>
+    </div>
+    <div id="footer-logo">
+        <a href="" ><img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt=""></a>
+    </div>
+    <!-- <div id="search-box_footer">
+            <input id="query" type="text" placeholder="Search here...">
+            <button  onclick="search()" <i class="fa-solid fa-magnifying-glass" ></i></button>         
+    </div> -->
+</section>   
+<div id="site-footer">
+    <div id="box-1-footer">
+        <h3 id="styl">TRENDING today</h3>
+        <div id="footer1Data"></div>
+        
+    </div>
+    <div id="box-2-footer">
+        <h3 id="styl">trending topic</h3>
+        <div id="containt2"></div>
+    </div>
+    <div id="box-3-footer">
+        <h3 id="styl">trending on technology</h3>
+        <div id="containt3"></div>
+    </div>       
+</div>
+<div id="laster-footer">
+<div id="footer-last">
+    <div id="main_menu-footer">
+        <ul>
+            <li><a href=""></a>HOME</li>
+            <li><a href=""></a>NEWS</li>
+            <li><a href=""></a>CORONAVIRUS</li>
+            <li><a href=""></a>OPINION</li>
+            <li><a href=""></a>BUSINESS</li>
+            <li><a href=""></a>SPORT</li>
+            <li><a href=""></a>CROSSWORD<i class="fa-solid fa-plus"></i></li>
+            <li><a href=""></a>COUPONS</li>
+        </ul>
+    </div>
+</div>
+<div id="bc_colours">
+<div>
+<div id="footer-last2">
+    <span id="colom-footer">THE SITE</span>
+    <div id="mainu_menu2-footer">
+        
+        <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a href="">Archive</a></li>
+            <li><a href="">Print Subscripition</a></li>
+            <li><a href="">ePaper</a></li>
+            <li><a href="">Digital Subscripition</a></li>
+            <li><a href="">Rss Feeds</a></li>
+            <li><a href="">Sitemap</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<div>
+<div id="footer-last2">
+    <span id="colom-footer">GROUP SITES</span>
+    <div id="mainu_menu2-footer">
+        
+        <ul>
+            <li><a href="">The Hindu</a></li>
+            <li><a href="">இந்து தமிழ் திசை</a></li>
+            <li><a href="">Business Line
+            <li><a href="">BL on Camus</a></li>
+            <li><a href="">Sportstar</a></li>
+            <li><a href="">Frontline</a></li>
+            <li><a href="">The Hindu Center</a></li>
+            <li><a href="">RoofandFloor</a></li>
+            <li><a href="">STEP</a></li>
+            <li><a href="">Young World Club</a></li>
+            <li><a href="">Publication</a></li>
+            <li><a href="">eBooks</a></li>
+            <li><a href="">Images</a></li>
+            <li><a href="">Classifieds</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+<div id="footer_finish">
+<span><a href="">CONTACT US</a>" Copyright© 2022, THG PUBLISHING PVT LTD."</span>
+</div>
+
+
+<div id="movie"></div>
+<!-- <div id="sideMovie"> -->
+</div>
 </body>
+
+<script src="https://kit.fontawesome.com/01d90ed8c9.js" crossorigin="anonymous"></script>
+
 </html>
 <script>
+// ------------------local storage data -------------------------------------------------------------------------
+
     var data = JSON.parse(localStorage.getItem('news'))
     console.log(data)
 
-    
-    // let image = document.createElement("img")
-    // image.src =data.articles[0].urlToImage;
+    let image = document.createElement("img")
+    image.src =data.articles[0].urlToImage;
+    // image.src =data.articles[1].urlToImage;
 
-    // let desc = document.createElement("p")
-    // desc.innerText = data.articles[0].description;
+    let image1 = document.createElement("img")
+    image1.src =data.articles[2].urlToImage;
+
+    let image2 = document.createElement("img")
+    image2.src =data.articles[2].urlToImage;
+
+    let image3 = document.createElement("img")
+    image3.src =data.articles[4].urlToImage;
+
+
+    let desc = document.createElement("p")
+    desc.innerText = data.articles[0].description;
+
+    let desc2 = document.createElement("h3")
+    desc2.innerText = data.articles[2].description;
+    desc2.setAttribute("id","title")
+
+    let title = document.createElement("h3")
+    title.innerText= data.articles[2].title;
+    title.setAttribute("id","title")
+
+    let content = document.createElement("p")
+    content.innerText = data.articles[2].content;
+    content.setAttribute("id","title")
+
 
     // let desc = document.createElement("p")
     // desc.innerText = data.description;
     
-    // document.getElementById("movie").append(image,desc)
+    // document.getElementById("movie").append(image,desc,image1,desc2)
+    document.getElementById("head-photo").append(image1)
+    document.getElementById("heading").append(title)
+    document.getElementById("sidebar1").append(image2)
+    document.getElementById("sidebar2").append(image)
+    document.getElementById("sidebar3").append(image3)
+    document.getElementById("detailedsa").append(desc2,content)
+    
 
-    // data = JSON.stringify(data);
-function appededData(data){
-    data.forEach(ele => {
-        var card = document.createElement('div');
 
-        let image=document.createElement("img")  //IMAGE
-        image.src=ele.articles.urlToImage
+    // const api_Key ="1ba529b81c6f42d0aa7ee7a4cd853158" //main API
+    // const api_Key ="ba06302d64924bf19b8658d40e62487c"
+    // const api_Key ="2e8944e2bfde48579efbfc69efcebb4e"
+    // const api_Key ="42ea0a4eb67345b48446edd20f0fbff2"
+    const api_Key ="280cfd40a460489e99d7b0bf899d28c3"
 
-        card.append(image)
-        document.getElementById("movie").append(card)
-        
+    const you_api ="AIzaSyCU0dk6-PqHlRuo2pwDKt1F-s3E-98g05E";
+    // const you_api ="AIzaSyBv64R0Y4h55e1d8k_Mdrkq83_Suc3EyrE";
+    // const you_api ="AIzaSyBZOEv-ePz480fgAvhSOktvYWD_RlcI4X8";
+    
+
+// -------------------------------Intrnation ---  news --news----------------div 1 data -----------------------------------------------------------------
+
+    async function getData()
+  {
+    let url= `https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=6&apiKey=1ba529b81c6f42d0aa7ee7a4cd853158`;
+    try{
+        let response=await fetch(url)
+    let users=await response.json()
+    append(users.articles)
+    console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getData()
+
+
+function append(data){
+    let count = 1;
+  data.forEach((el) => {
+    // console.log(el);
+    let div1 = document.createElement("div");
+    div1.setAttribute("class", `news${count}`);
+    div1.addEventListener("click", function () {
+      dataDisplay(el);
     });
+    count++;
+    let image = document.createElement("img");
+    image.src = el.urlToImage;
+
+    let p = document.createElement("p");
+    p.innerText = el.title;
+
+
+        var link = document.createElement('a');
+        link.setAttribute("id","hide")
+        link.href = el.url;
+
+        link.append(p)
+
+    div1.append(image, link);
+    document.getElementById("card").append(div1);
+  });
 
 }
-    // data.forEach(function (el){
-    //     var card = document.createElement('div');
 
-        // let bigcard=document.createElement("div")
-        // bigcard.setAttribute("id","moviecard")
 
-        // let image=document.createElement("img")  //IMAGE
-        // image.src=el.articles.urlToImage
+// --------------------Nationals-----second div data -------------------------------------------------------
 
-        // card.append(image)
-        // document.getElementById("movie").append(card)
+    async function getDat1()
+{
+    let urlsa= `https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=16&apiKey=${api_Key}`;
+    try{
+        let response=await fetch(urlsa)
+    let users=await response.json()
+    appended(users.articles)
+    // console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getDat1()
 
-        // var cardBody = document.createElement('div');
+
+function appended(dated){
+    let count = 1;
+  dated.forEach((el) => {
+    // console.log(el);
+    let card2 = document.createElement("div");
+    card2.setAttribute("class",`news${count}`);
+    card2.addEventListener("click", function () {
+      dataDisplay(el);
+    });
+    count++;
+
+    let image = document.createElement("img");
+    image.src = el.urlToImage;
+    
+    let para = document.createElement("p");
+    para.innerText = el.title;
+
+        var link = document.createElement('a');
+        link.setAttribute("id","hide")
+        link.href = el.url;
+
+        link.append(para)
+
+    card2.append(image,link);
+    document.getElementById("last-grid").append(card2);
+  });
+
+}
+
+
+    //------------------------------funcanality of next and preview------------------------------------ 
+
+var button = document.getElementById('next');
+// var button = document.querySelector(.next);
+
+button.onclick = function () {
+    var container = document.getElementById('last-grid');
+    sideScroll(container,'right',25,100,10);
+};
+
+var back = document.getElementById('prev');
+back.onclick = function () {
+    var container = document.getElementById('last-grid');
+    sideScroll(container,'left',25,100,10);
+};
+
+function sideScroll(element,direction,speed,distance,step){
+    scrollAmount = 0;
+    var slideTimer = setInterval(function(){
+        if(direction == 'left'){
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if(scrollAmount >= distance){
+            window.clearInterval(slideTimer);
+        }
+    }, speed);
+}
+
+
+// --------------------------------------youtube data managing--------------------------------
+
         
-        // var newsHeading = document.createElement('h2');  //NEWSHEADING
-        // newsHeading.className = "card-title";
-        // newsHeading.innerHTML = el.title;
+let container = document.getElementById("video-detils")
+    async function fetchdation(){
+        let urls = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=worldnews&key=${you_api}`;
+        try{
+            let repns = await fetch(urls)
+            let data = await repns.json()
+            // console.log(data)
+            appendingt(data.items)
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
+
+    fetchdation();
+
+    function appendingt(datations){
+        console.log(datations)
+            datations.forEach(({id:{videoId},snippet:{title,thumbnails}}) => {
+            // console.log(videoId)
+            // console.log(title )
+            let div = document.createElement('div');
+ 
+            
+            let img = document.createElement('img')
+            // img.src= thumbnails.default.url;
+            // img.setAttribute("id","logo")
+
+
+            let iframe = document.createElement('iframe');
+            iframe.src= `https://www.youtube.com/embed/${videoId}`;
+            iframe.allow = "fullscreen";
+            iframe.setAttribute("id","iframeStyle")
+
+
+            let tagName =  document.createElement('h3');
+            tagName.innerText = title;
+            tagName.setAttribute("id","youtube-text")
+
+            div.append(iframe,tagName)
+
+            let video = {
+            title,
+            videoId,
+            
+            };
+
+            div.onclick = () => {
+            playVideo(video);
+            };
+            container.append(div)
+
+        });
+
+    };
+
+// -----------------------------------------last grid data append-----------------------------------------------------
+
+async function getData8()
+  {
+    let ulss8= `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=18&apiKey=${api_Key}`;
+    try{
+        let response=await fetch(ulss8)
+    let users=await response.json()
+    append8(users.articles)
+    // console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getData8()
+
+
+function append8(detaing){
+    let count = 1;
+  detaing.forEach((el) => {
+    // console.log(el);
+    let divis = document.createElement("div");
+    divis.setAttribute("class", `news${count}`);
+    divis.addEventListener("click", function () {
+      dataDisplay(el);
+    });
+    count++;
+    let imgaga = document.createElement("img");
+    imgaga.src = el.urlToImage;
+
+    let power = document.createElement("p");
+    power.innerText = el.description;
+
+        var linkis = document.createElement('a');
+        linkis.setAttribute("id","hide")
+        linkis.href = el.url;
+
+        linkis.append(power)
+
+    divis.append(linkis);
+    document.getElementById("lastpagelike").append(divis);
+  });
+
+}
+
+// -----------------------------Sports  ----------------------------------------------------------------------------------------------
+    
+async function getdata5()
+  {
+    let url5= `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=12&apiKey=${api_Key}`;
+    try{
+        let response=await fetch(url5)
+    let users=await response.json()
+    apprnd5(users.articles)
+    console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getdata5()
+
+
+function apprnd5(data){
+    movie.innerHTML=null
+    let count = 1;
+  data.forEach((el) => {
+    // console.log(el);
+    let div1 = document.createElement("div");
+    div1.setAttribute("class", `news${count}`);
+    div1.addEventListener("click", function () {
+      dataDisplay(el);
+    });
+    count++;
+    let image = document.createElement("img");
+    image.src = el.urlToImage;
+
+    let p = document.createElement("p");
+    p.innerText = el.title;
+
+
+        var link = document.createElement('a');
+        link.setAttribute("id","hide")
+        link.href = el.url;
+
+        link.append(p)
+
+    div1.append(image, link);
+    document.getElementById("sports").append(div1);
+  });
+
+}
+
+
+// ------------------healts--------------------------------------------------------------
+
         
-        // var dateHeading = document.createElement('h6');
-        // dateHeading.className = "text-primary";
-        // // dateHeading.innerHTML = date[0];
-        // dateHeading.innerHTML = el.publishedAt
-
-        // var discription = document.createElement('p');
-        // discription.className="moviedes";
-        // discription.innerHTML = el.description;
-
-        // var link = document.createElement('a');
-        // link.className="btn btn-dark";
-        // link.setAttribute("target", "_blank");
-        // link.href = el.url;
-        // link.innerHTML="READ MORE";
-
-        // cardBody.appendChild(newsHeading);
-        // // cardBody.appendChild(dateHeading);
-        // cardBody.appendChild(discription);
-        // cardBody.appendChild(link);
-
-        // card.appendChild(image);
-        // card.appendChild(cardBody);
-
-        // bigcard.appendChild(card);
-
-        // movie.appendChild(bigcard);
-        // bigcard.append(image)
-        // movie.append(bigcard)
-    // })
+async function getData6()
+  {
+    let urls6= `https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=12&apiKey=${api_Key}`;
+    try{
+        let response=await fetch(urls6)
+    let users=await response.json()
+    append6(users.articles)
+    console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getData6()
 
 
+function append6(data){
+    movie.innerHTML=null
+    let count = 1;
+  data.forEach((el) => {
+    // console.log(el);
+    let div1 = document.createElement("div");
+    div1.setAttribute("class", `news${count}`);
+    div1.addEventListener("click", function () {
+      dataDisplay(el);
+    });
+    count++;
+    let image = document.createElement("img");
+    image.src = el.urlToImage;
 
-    // function append(data){
-    // movie.innerHTML=null
-    // data.forEach(function (el){
-    //     var card = document.createElement('div');
+    let p = document.createElement("p");
+    p.innerText = el.title;
+
+
+        var link = document.createElement('a');
+        link.setAttribute("id","hide")
+        link.href = el.url;
+
+        link.append(p)
+
+    div1.append(image, link);
+    document.getElementById("Health").append(div1);
+  });
+
+}
+
+// --------------Entertainments------------------------------------------
+
+       
+async function getData7()
+  {
+    let urls7= `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&pageSize=12&apiKey=${api_Key}`;
+    try{
+        let response=await fetch(urls7)
+    let users=await response.json()
+    append7(users.articles)
+    console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getData7()
+
+
+function append7(data){
+    movie.innerHTML=null
+    let count = 1;
+  data.forEach((el) => {
+    // console.log(el);
+    let div1 = document.createElement("div");
+    div1.setAttribute("class", `news${count}`);
+    div1.addEventListener("click", function () {
+      dataDisplay(el);
+    });
+    count++;
+    let image = document.createElement("img");
+    image.src = el.urlToImage;
+
+    let p = document.createElement("p");
+    p.innerText = el.title;
+
+
+        var link = document.createElement('a');
+        link.setAttribute("id","hide")
+        link.href = el.url;
+
+        link.append(p)
+
+    div1.append(image, link);
+    document.getElementById("entertainment").append(div1);
+  });
+
+}
+
+// -------------------------------Others ----country-------news------------------------------------------------------------
+
+async function getDaat9()
+{
+    let uls9= `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=${api_Key}`;
+    // let uls9= `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=28`;
+    ;
+    try{
+        let response=await fetch(uls9)
+    let users=await response.json()
+    appended9(users.articles)
+    // console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getDaat9()
+
+
+function appended9(dated){
+    movie.innerHTML=null
+    let count = 1;
+  dated.forEach((el) => {
+    // console.log(el);
+    let card2 = document.createElement("div");
+    card2.setAttribute("class",`news${count}`);
+    card2.addEventListener("click", function () {
+      dataDisplay(el);
+    });
+    count++;
+
+    let image = document.createElement("img");
+    image.src = el.urlToImage;
+    
+    let para = document.createElement("p");
+    para.innerText = el.title;
+
+        var link = document.createElement('a');
+        link.setAttribute("id","hide")
+        link.href = el.url;
+
+        link.append(para)
+
+    card2.append(image,link);
+    document.getElementById("UsaNews").append(card2);
+  });
+
+}
+
+//---------------------footer -------js----------part--------------------------------------------------------------------------------                      ------------
+
+
+    
+// let movie=document.getElementById("containt")
+    async function getData10()
+{
+    let ulrs10= `https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=3&apiKey=${api_Key}`;
+    try{
+        let response=await fetch(ulrs10)
+    let users=await response.json()
+    appeen10(users.articles)
+    console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getData10()
+
+
+function appeen10(data10){
+    data10.forEach(function (el){
+        var card = document.createElement('div');
+        card.setAttribute("id","bhu")
+        var span =  document.createElement("span")
+       
+        var ul = document.createElement("ul")
+        ul.setAttribute("id","abc")
+
+        var newsHeading = document.createElement("p");  //NEWSHEADING
+        newsHeading.setAttribute("id","edf")
+        newsHeading.innerHTML = el.title;
+        newsHeading.setAttribute("id","TextfontStyel")
+
+        var link = document.createElement('a');
+        link.setAttribute("id","hide")
+        link.href = el.url;
+
+        link.append(newsHeading)
+
+        ul.append(span,link)
+        card.append(ul)
+        // movie.append(card)
+        document.getElementById("footer1Data").append(card)
+     
+    })
+}
+
+
+let movie2=document.getElementById("containt2")
+    async function getData11()
+{
+    let urls12= `https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=4&apiKey=${api_Key}`;
+    try{
+        let response=await fetch(urls12)
+    let users=await response.json()
+    append12(users.articles)
+    console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getData11()
+
+function append12(data3){
+    movie2.innerHTML=null
+    data3.forEach(function (el){
+        var card = document.createElement('div');
+        card.setAttribute("id","bhu")
+        var span =  document.createElement("span")
+       
+        var ul = document.createElement("ul")
+        ul.setAttribute("id","abc")
+
+        var newsHeading = document.createElement("p");  //NEWSHEADING
+        newsHeading.setAttribute("id","edf")
+        newsHeading.innerHTML = el.title;
+
+        var link = document.createElement('a');
+        link.setAttribute("id","hide")
+        link.href = el.url;
+
+        link.append(newsHeading)
+
+        ul.append(span,link)
+        card.append(ul)
+        movie2.append(card)
 
      
+    })
+}
 
-    //     let image=document.createElement("img")  //IMAGE
-    //     image.src=el.urlToImage
-    //     image.setAttribute("id","movieimg")
 
-    //     card.append(image)
-    //     movie.append(card)
+let movie3=document.getElementById("containt3")
+    async function getdata13()
+{
+    let url3= `https://newsapi.org/v2/top-headlines?country=in&category=technology&pageSize=4&apiKey=${api_Key}`;
+    try{
+        let response=await fetch(url3)
+    let users=await response.json()
+    append13(users.articles)
+    console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getdata13()
 
-        // var cardBody = document.createElement('div');
-        
-        // var newsHeading = document.createElement('h2');  //NEWSHEADING
-        // newsHeading.className = "card-title";
-        // newsHeading.innerHTML = el.title;
+function append13(data3){
+    movie3.innerHTML=null
+    data3.forEach(function (el){
+        var card = document.createElement('div');
+        card.setAttribute("id","bhu")
+        var span =  document.createElement("span")
+       
+        var ul = document.createElement("ul")
+        ul.setAttribute("id","abc")
 
-        // var discription = document.createElement('p');
-        // discription.className="moviedes";
-        // discription.innerHTML = el.description;
+        var newsHeading = document.createElement("p");  //NEWSHEADING
+        newsHeading.setAttribute("id","edf")
+        newsHeading.innerHTML = el.title;
 
-        // var link = document.createElement('a');
-        // link.className="btn btn-dark";
-        // link.setAttribute("target", "_blank");
-        // link.href = el.url;
-        // link.innerHTML="READ MORE";
+        var link = document.createElement('a');
+        link.setAttribute("id","hide")
+        link.href = el.url;
 
-        // cardBody.appendChild(newsHeading);
-        
-        // cardBody.appendChild(discription);
-        // cardBody.appendChild(link);
+        link.append(newsHeading)
 
-        // card.appendChild(image);
-        // card.appendChild(cardBody);
+        ul.append(span,link)
+        card.append(ul)
+        movie3.append(card)
 
-        // bigcard.appendChild(card);
+     
+    })
+}
 
-        // movie.appendChild(bigcard);
-        
-    // })
-// }
 
 </script>
+<script src="https://kit.fontawesome.com/01d90ed8c9.js" crossorigin="anonymous"></script>
+<script src="./menu.js"></script>
+<!-- <script src="footer2.js"></script> -->
+

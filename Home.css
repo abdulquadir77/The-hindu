@@ -219,13 +219,14 @@ body {
 #socialist-footer > ul > li > a {
   cursor: pointer;
 }
-#footer-logo {
+/* #footer-logo {
   text-align: center;
-  margin-top: -27px;
-}
+  margin-top: -1px;
+} */
 
-#footer-logo > img {
+#footer-logo > a > img {
   width: 200px;
+  margin-left: 10px;
 }
 #search-box_footer {
   margin-top: -27.5px;
@@ -408,6 +409,8 @@ a:hover {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  color: black;
+  line-height: 30px;
 }
 #styl {
   margin-top: 10%;

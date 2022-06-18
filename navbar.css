@@ -103,6 +103,7 @@ input[type="text"] {
 .logotext1 {
   /* height: 20px; */
   /* width: 20%; */
+  margin-right: 30px;
 
   margin-left: -20px;
   /* border: 1px solid red; */
@@ -118,7 +119,8 @@ input[type="text"] {
   /* height: 20px; */
   /* width: 30%; */
   /* border: 1px solid red; */
-  margin-top: 20px;
+  margin-top: 17px;
+  margin-right: 30px;
   /* text-align: center; */
   cursor: pointer;
   line-height: 0px;
@@ -134,7 +136,7 @@ input[type="text"] {
   /* height: 20px; */
   /* width: 10%; */
   /* border: 1px solid red; */
-  margin-top: 15px;
+  margin-top: 10px;
   /* text-align: center; */
   cursor: pointer;
   font-size: 12px;
@@ -154,7 +156,7 @@ input[type="text"] {
   /* border: 1px solid green; */
 }
 #navbar2 {
-  margin-left: -40px;
+  /* margin-left: -40px; */
   /* width:60%; */
   margin-top: 15px;
 }
@@ -237,5 +239,6 @@ input[type="text"] {
 /* menu-bar CSS */
 
 #menu-button {
-  margin-top: -45px;
+  padding: 9px;
+  margin-top: -53px;
 }
