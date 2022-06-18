@@ -38,7 +38,7 @@ function dataDisplay(data) {
 
 const apiikeys ="7663403954f442fab1f03856fa1b40ae";
 
-let search = async () => {
+let searchDetails = async () => {
   try {
     let query = document.getElementById("query").value;
 
