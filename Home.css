@@ -427,3 +427,46 @@ a:hover {
   font-size: small;
   margin-bottom: 8px;
 }
+
+#UsaNews{
+  height: 250px;
+  width: 100%;
+  margin-top: 20px;
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,auto);
+  gap: 20px;
+
+}
+#UsaNews{
+  height: 250px;
+  width: auto;
+  /* border: 1px solid blue; */
+  background-color: white;
+  display: flex;
+  overflow-y: scroll;
+  overflow-y: hidden;
+  scroll-behavior: unset;
+}
+#UsaNews::-webkit-scrollbar {
+display: none;
+
+}
+  #UsaNews {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+  }
+#UsaNews > div img{
+  margin-top: 12px;
+  margin-left: 0px;
+  height: 135px;
+  width: auto;
+  /* overflow-y: scroll; */
+} 
+#UsaNews > div > p{
+  margin-left: 20px;
+  overflow: hidden;
+  font-size: small;
+  /* font-weight: bolder; */
+}
