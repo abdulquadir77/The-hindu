@@ -287,7 +287,7 @@ function appended16(dated){
     para.innerText = el.title;
 
     card2.append(image,para);
-    document.getElementById("UsaNews").append(card2);
+    document.getElementById("UsaNews2").append(card2);
   });
 
 }
