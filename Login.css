@@ -1,10 +1,11 @@
 body {
   font-family: "Inter", sans-serif;
+  text-align: center;
 }
 
 input[type="text"],
 input[type="password"] {
-  width: 100%;
+  width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -20,7 +21,7 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   border-radius: 5px;
 }
 
@@ -36,11 +37,13 @@ span.psw {
 .modal {
   /* display: none;  */
   width: 40%;
-  height: auto;
-  margin: auto;
-  position: relative;
+  /* height: 500px;
+   */
+  top: 60px;
+  left: 300px;
+  /* margin: auto; */
+  position: fixed;
   z-index: 1;
-  top: 30px; /* Full width */
   /* overflow: auto; Enable scroll if needed */
   /* background-color: #505050;  */
   /* background-color: #505050;  */
@@ -55,7 +58,7 @@ span.psw {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   /* border: 1px solid #888; */
-  width: 60%; /* Could be more or less, depending on screen size */
+  width: 50%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
@@ -101,13 +104,17 @@ span.psw {
 #container_login {
   display: flex;
   height: 40px;
-  margin-left: 25px;
+  margin-left: 150px;
+  /* margin: auto; */
+  width: 100%;
 }
 #container_login p {
   margin-left: 20px;
 }
 #container2_login {
   display: flex;
+  margin-left:130px;
+
   height: 50px;
   width: 100%;
   /* border:  1px solid red; */
@@ -123,4 +130,7 @@ h4 {
 a {
   text-decoration: none;
   color: red;
+}
+.psw{
+margin-right: 50px;
 }
