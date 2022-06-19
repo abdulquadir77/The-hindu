@@ -1,6 +1,6 @@
 //API append From "NEWS API" ("Abdul Quadir")
 async function myFunction() {
-  let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=0efd075623324aef897dbb455bf38761`;
+  let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=7d1d0810cdec45e8b645b5fad98dfb40`;
 
   // let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=c6e033dcc9ad4f3fa103d693944185ec`;
   let res = await fetch(url);
@@ -100,7 +100,8 @@ function sideScroll(element, direction, speed, distance, step) {
 
 // const apiikeys ="9ba8dfd0cda84d17abfebbb4e4f05b67";
 
-const apiikeys = "0efd075623324aef897dbb455bf38761";
+// const apiikeys = "0efd075623324aef897dbb455bf38761";
+const apiikeys = "7d1d0810cdec45e8b645b5fad98dfb40";
 
 // const apiikeys = "280cfd40a460489e99d7b0bf899d28c3";
 // const apiikeys = "072c5a0204aa44c9820f8fe48e737ff7";
