@@ -16,6 +16,7 @@
     <title>The Hindu</title>
     <link rel="stylesheet" href="./navbar.css">
     <link rel="stylesheet" href="./menu.css">
+    <link rel="icon" href="favicon.ico">
         
     <style>
         * {
@@ -1455,9 +1456,9 @@
         
     </div>    
     <div id="pagination">    
-        <a href="#" class="active" style="background-color: gray;" >First </a>
+        <a href="Home.html" class="active" style="background-color: gray;" >First </a>
         <a href="#" class="active" style="background-color: gray;">Prev</a>
-        <a href="#" class="active">1</a>
+        <a href="Home.html" class="active">1</a>
         <a href="Home.html">2</a>
         <a href="details.html">3</a>
         <a href="searchFdetails.html">4</a>
@@ -1639,7 +1640,12 @@
     // const api_Key ="42ea0a4eb67345b48446edd20f0fbff2"
     // const api_Key ="280cfd40a460489e99d7b0bf899d28c3"
     // const api_Key ="4cae90ffd89a4e6a8bdd80a6d457fdc5"
-    const api_Key ="072c5a0204aa44c9820f8fe48e737ff7"
+    // const api_Key ="072c5a0204aa44c9820f8fe48e737ff7"
+    // const api_Key ="072c5a0204aa44c9820f8fe48e737ff7"
+    // const api_Key ="c6e033dcc9ad4f3fa103d693944185ec"
+    // const api_Key ="0efd075623324aef897dbb455bf38761"
+    // const api_Key ="7d1d0810cdec45e8b645b5fad98dfb40"
+    const api_Key ="110e3f2f7d324f66a9aa335a34daf8c2"
     // const api_Key ="9ba8dfd0cda84d17abfebbb4e4f05b67"
 
     const you_api ="AIzaSyCU0dk6-PqHlRuo2pwDKt1F-s3E-98g05E";
@@ -1651,7 +1657,7 @@
 
     async function getData()
   {
-    let url= `https://newsapi.org/v2/top-headlines?country=ar&category=business&pageSize=6&apiKey=1ba529b81c6f42d0aa7ee7a4cd853158`;
+    let url= `https://newsapi.org/v2/top-headlines?country=ar&category=business&pageSize=6&apiKey=${api_Key}`;
     try{
         let response=await fetch(url)
     let users=await response.json()

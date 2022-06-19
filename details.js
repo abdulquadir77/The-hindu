@@ -21,7 +21,7 @@ document
   .append(image, title, content, desc, publish);
 
 async function myFunction() {
-  let url = `https://newsdata.io/api/1/news?apikey=pub_84091586a77b5fb99d81bd1d64b5eee32e81&q=in&country=ca&language=en&category=top`;
+  let url = `https://newsdata.io/api/1/news?apikey=pub_84091586a77b5fb99d81bd1d64b5eee32e81&q=in&country=in&language=en&category=top`;
   let res = await fetch(url);
 
   let data = await res.json();
