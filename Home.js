@@ -126,7 +126,7 @@ let searchDetails = async () => {
   }
 };
 
-let movie = document.getElementById("containt");
+// let movie = document.getElementById("containt1");
 async function getData15() {
   let urls15 = `https://newsapi.org/v2/top-headlines?country=uk&category=business&pageSize=5&apiKey=${apiikeys}`;
   try {
@@ -162,7 +162,8 @@ function appened15(data) {
 
     ul.append(span, link);
     card.append(ul);
-    movie.append(card);
+    // movie.append(card);
+    document.getElementById("dtatApprfirng").append(card)
   });
 }
 
@@ -246,4 +247,47 @@ function append3(data3) {
     card.append(ul);
     movie3.append(card);
   });
+}
+
+async function getData16()
+{
+    let urls16= `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=${apiikeys}`;
+    // let urls16= `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=28`;
+    ;
+    try{
+        let response=await fetch(urls16)
+    let users=await response.json()
+    appended16(users.articles)
+    // console.log(users.articles)
+    }
+   catch(err)
+   {
+       console.log(err)
+   }
+}
+getData16()
+
+
+function appended16(dated){
+    movie.innerHTML=null
+    let count = 1;
+  dated.forEach((el) => {
+    // console.log(el);
+    let card2 = document.createElement("div");
+    card2.setAttribute("class",`news${count}`);
+    card2.addEventListener("click", function () {
+      dataDisplay(el);
+    });
+    count++;
+
+    let image = document.createElement("img");
+    image.src = el.urlToImage;
+    
+    let para = document.createElement("p");
+    para.innerText = el.title;
+
+    card2.append(image,para);
+    document.getElementById("UsaNews").append(card2);
+  });
+
 }
