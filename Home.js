@@ -1,11 +1,8 @@
 //API append From "NEWS API" ("Abdul Quadir")
 async function myFunction() {
-<<<<<<< HEAD
   let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=0efd075623324aef897dbb455bf38761`;
-=======
-  let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=c6e033dcc9ad4f3fa103d693944185ec`;
->>>>>>> 3d04929651e798494f417dbf6c1b825a784c5778
 
+  // let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=c6e033dcc9ad4f3fa103d693944185ec`;
   let res = await fetch(url);
   let data = await res.json();
   appendData(data.articles);
@@ -57,12 +54,6 @@ function appended9(dated) {
     let para = document.createElement("p");
     para.innerText = el.title;
 
-    // var link = document.createElement("a");
-    // link.setAttribute("id", "hide");
-    // link.href = el.url;
-
-    // link.append(para);
-
     card2.append(image, para);
     document.getElementById("UsaNews").append(card2);
   });
@@ -108,13 +99,12 @@ function sideScroll(element, direction, speed, distance, step) {
 // const apiikeys ="280cfd40a460489e99d7b0bf899d28c3";
 
 // const apiikeys ="9ba8dfd0cda84d17abfebbb4e4f05b67";
-<<<<<<< HEAD
+
 const apiikeys = "0efd075623324aef897dbb455bf38761";
-=======
+
 // const apiikeys = "280cfd40a460489e99d7b0bf899d28c3";
 // const apiikeys = "072c5a0204aa44c9820f8fe48e737ff7";
-const apiikeys = "c6e033dcc9ad4f3fa103d693944185ec";
->>>>>>> 3d04929651e798494f417dbf6c1b825a784c5778
+// const apiikeys = "c6e033dcc9ad4f3fa103d693944185ec";
 
 let searchDetails = async () => {
   try {
@@ -150,7 +140,7 @@ async function showDataappne() {
 showDataappne();
 
 function nsdnfindjn(data) {
-  movie.innerHTML = null;
+  // movie.innerHTML = null;
   data.forEach(function (el) {
     var card = document.createElement("div");
     card.setAttribute("id", "bhu");
@@ -172,7 +162,7 @@ function nsdnfindjn(data) {
     ul.append(span, link);
     card.append(ul);
     // movie.append(card);
-    document.getElementById("dtatApprfirng").append(card)
+    document.getElementById("dtatApprfirng").append(card);
   });
 }
 
@@ -257,32 +247,27 @@ function append3(data3) {
   });
 }
 
-async function getData16()
-{
-    let urls16= `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=${apiikeys}`;
-    // let urls16= `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=28`;
-    ;
-    try{
-        let response=await fetch(urls16)
-    let users=await response.json()
-    appended16(users.articles)
+async function getData16() {
+  let urls16 = `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=${apiikeys}`;
+  // let urls16= `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=28`;
+  try {
+    let response = await fetch(urls16);
+    let users = await response.json();
+    appended16(users.articles);
     // console.log(users.articles)
-    }
-   catch(err)
-   {
-       console.log(err)
-   }
+  } catch (err) {
+    console.log(err);
+  }
 }
-getData16()
+getData16();
 
-
-function appended16(dated){
-    movie.innerHTML=null
-    let count = 1;
+function appended16(dated) {
+  // movie.innerHTML = null;
+  let count = 1;
   dated.forEach((el) => {
     // console.log(el);
     let card2 = document.createElement("div");
-    card2.setAttribute("class",`news${count}`);
+    card2.setAttribute("class", `news${count}`);
     card2.addEventListener("click", function () {
       dataDisplay(el);
     });
@@ -290,12 +275,11 @@ function appended16(dated){
 
     let image = document.createElement("img");
     image.src = el.urlToImage;
-    
+
     let para = document.createElement("p");
     para.innerText = el.title;
 
-    card2.append(image,para);
-    document.getElementById("UsaNews2").append(card2);
+    card2.append(image, para);
+    document.getElementById("UsaNews").append(card2);
   });
-
 }
