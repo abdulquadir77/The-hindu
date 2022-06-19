@@ -1,6 +1,6 @@
 //API append From "NEWS API" ("Abdul Quadir")
 async function myFunction() {
-  let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=7d1d0810cdec45e8b645b5fad98dfb40`;
+  let url = `https://newsapi.org/v2/top-headlines?country=ch&apiKey=7d1d0810cdec45e8b645b5fad98dfb40`;
 
   // let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=c6e033dcc9ad4f3fa103d693944185ec`;
   let res = await fetch(url);

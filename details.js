@@ -21,7 +21,7 @@ document
   .append(image, title, content, desc, publish);
 
 async function myFunction() {
-  let url = `https://newsdata.io/api/1/news?apikey=pub_84091586a77b5fb99d81bd1d64b5eee32e81&q=in&country=in&language=en&category=top`;
+  let url = `https://newsdata.io/api/1/news?apikey=pub_84091586a77b5fb99d81bd1d64b5eee32e81&q=in&country=us&language=en&category=top`;
   let res = await fetch(url);
 
   let data = await res.json();
@@ -50,8 +50,6 @@ function appendData(data) {
 }
 
 // -------------------------santosh funcanlity----------------------
-
-
 
 const apiikeys = "4cae90ffd89a4e6a8bdd80a6d457fdc5";
 
@@ -154,7 +152,6 @@ function append2(data3) {
   });
 }
 
-
 let movie3 = document.getElementById("containt3");
 async function getData3() {
   let url3 = `https://newsapi.org/v2/top-headlines?country=in&category=technology&pageSize=5&apiKey=${apiikeys}`;
@@ -195,4 +192,3 @@ function append3(data3) {
     movie3.append(card);
   });
 }
-
