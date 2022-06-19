@@ -18,15 +18,16 @@
     <link rel="stylesheet" href="./menu.css">
         
     <style>
-        /* * {
+        * {
             box-sizing: border-box;
             margin: 0px;
             padding: 0px;
-          } */
+          }
         body{
             width: 70%;
             margin: auto;
             background: #f5f5f5;
+          
         }
         #photo-div{
             height: 400px;
@@ -39,6 +40,7 @@
             gap: 2px;
             border: 1px solid black;
             background-color: white;
+            /* padding: 20px; */
 
         }
         #head-photo{
@@ -251,6 +253,13 @@
             height: 1.5px;
             background: #333;
             width: 80%;
+        }
+        #line12{
+            border: 0;
+            height: 1px;
+            background: rgb(146, 144, 144);
+            width: 100%;
+            margin-bottom: 10px;
         }
         #text{
             margin-top: 18%;
@@ -593,10 +602,10 @@
         }
         #footer-logo{
             text-align: center;
-            margin-top: -27px;
+            margin-top: -25px;
         }
         
-        img{
+        #footer-logo > a > img{
             margin-left: 10%;
             width: 250px;
         }
@@ -806,6 +815,7 @@
     #containt2{
         overflow: hidden;
     }
+   
 
 
 
@@ -838,7 +848,8 @@
         </div>
     </section>
         <div id="imglogo">
-            <img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="">
+            <a href="Home.html"> <img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt=""> </a>
+            <!-- <img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt=""> -->
             <div id="logotext">
                 <div class="logotext1">LATEST NEWS</div>
                 <div class="logotext2">THURSDAY JUNE 16,2022</div>
@@ -853,25 +864,25 @@
             <div id="navbar2">
                 <ul>
                     <li>
-                        <a href="#">Todays Paper</a>
+                        <a href="Home.html">Todays Paper</a>
                     </li>
                     <li>
-                        <a href="#">News</a>
+                        <a href="details.html">News</a>
                     </li>
                     <li>
                         <a href="#">Opinion</a>
                     </li>
                     <li>
-                        <a href="#">Business</a>
+                        <a href="searchFdetails.html">Business</a>
                     </li>
                     <li>
-                        <a href="#">Entertainment</a>
+                        <a href="searchFdetails.html">Entertainment</a>
                     </li>
                     <li>
-                        <a href="#">Crossword+</a>
+                        <a href="searchFdetails.html">Crossword+</a>
                     </li>
                     <li>
-                        <a href="#">Scinece</a>
+                        <a href="searchFdetails.html">Scinece</a>
                     </li>
                 </ul>
             </div>
@@ -1360,6 +1371,9 @@
         </div>
 
         <!-- <hr id="line" > -->
+        <div>
+            <hr id="line12">
+        </div>
  
     <div id="photo-div">
         <div id="heading"></div>
@@ -1444,9 +1458,9 @@
         <a href="#" class="active" style="background-color: gray;" >First </a>
         <a href="#" class="active" style="background-color: gray;">Prev</a>
         <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
+        <a href="Home.html">2</a>
+        <a href="details.html">3</a>
+        <a href="searchFdetails.html">4</a>
         <a href="#">5</a>
         <a href="#">6</a>
         <a href="#">7</a>
@@ -1457,7 +1471,7 @@
         <a href="#">12</a>
         <a href="#">13</a>
         <a href="#">14</a>
-        <a href="#">15</a>
+        <!-- <a href="#">15</a> -->
         <a href="#" class="active">NEXT</a>
 </div> 
 
@@ -1474,7 +1488,7 @@
         </ul>
     </div>
     <div id="footer-logo">
-        <a href="" ><img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt=""></a>
+        <a href="Home.html" ><img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt=""></a>
     </div>
     <!-- <div id="search-box_footer">
             <input id="query" type="text" placeholder="Search here...">
@@ -1623,7 +1637,11 @@
     // const api_Key ="ba06302d64924bf19b8658d40e62487c"
     // const api_Key ="2e8944e2bfde48579efbfc69efcebb4e"
     // const api_Key ="42ea0a4eb67345b48446edd20f0fbff2"
-    const api_Key ="280cfd40a460489e99d7b0bf899d28c3"
+    // const api_Key ="280cfd40a460489e99d7b0bf899d28c3"
+    // const api_Key ="4cae90ffd89a4e6a8bdd80a6d457fdc5"
+    // const api_Key ="072c5a0204aa44c9820f8fe48e737ff7"
+    // const api_Key ="072c5a0204aa44c9820f8fe48e737ff7"
+    const api_Key ="c6e033dcc9ad4f3fa103d693944185ec"
     // const api_Key ="9ba8dfd0cda84d17abfebbb4e4f05b67"
 
     const you_api ="AIzaSyCU0dk6-PqHlRuo2pwDKt1F-s3E-98g05E";
@@ -1635,7 +1653,7 @@
 
     async function getData()
   {
-    let url= `https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=6&apiKey=1ba529b81c6f42d0aa7ee7a4cd853158`;
+    let url= `https://newsapi.org/v2/top-headlines?country=ar&category=business&pageSize=6&apiKey=1ba529b81c6f42d0aa7ee7a4cd853158`;
     try{
         let response=await fetch(url)
     let users=await response.json()
