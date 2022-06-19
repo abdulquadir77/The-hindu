@@ -1,6 +1,6 @@
 //API append From "NEWS API" ("Abdul Quadir")
 async function myFunction() {
-  let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=4cae90ffd89a4e6a8bdd80a6d457fdc5`;
+  let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=0efd075623324aef897dbb455bf38761`;
 
   let res = await fetch(url);
   let data = await res.json();
@@ -104,7 +104,7 @@ function sideScroll(element, direction, speed, distance, step) {
 // const apiikeys ="280cfd40a460489e99d7b0bf899d28c3";
 
 // const apiikeys ="9ba8dfd0cda84d17abfebbb4e4f05b67";
-const apiikeys = "280cfd40a460489e99d7b0bf899d28c3";
+const apiikeys = "0efd075623324aef897dbb455bf38761";
 
 let searchDetails = async () => {
   try {
@@ -204,7 +204,6 @@ function append2(data3) {
     movie2.append(card);
   });
 }
-
 
 let movie3 = document.getElementById("containt3");
 async function getData3() {

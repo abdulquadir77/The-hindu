@@ -84,7 +84,7 @@
                     <a href="subsrcibe.html" ><button class="navbutn2">SUBSCRIBE NOW</button></a>
                 </div>
                 <div class="navbutn">
-                    <a href="Login.html" id="login"><button class="navbutn3" >LOG IN</button></a>
+                    <a href="Login.html" ><button class="navbutn3" id="login" >LOG IN</button></a>
                 </div>
             </div>
         </div>
@@ -569,9 +569,11 @@
 
     <!-- <div id="container3"></div> -->
 
-    <div id="UsaNews"></div>
-    <button id="prev_home"><i class="fa-solid fa-angle-left"></i></button>
+    <div id="UsaNews">
+        <button id="prev_home"><i class="fa-solid fa-angle-left"></i></button>
     <button id="next_home"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+    
     
 
     
@@ -681,12 +683,27 @@
 <div id="footer_finish">
   <span><a href="">CONTACT US</a>" Copyright© 2022, THG PUBLISHING PVT LTD."</span>
 </div>
-
   </body>
- 
 </html> 
   <script src="Home.js"></script>
   <script src="https://kit.fontawesome.com/01d90ed8c9.js" crossorigin="anonymous"></script>
   <script src="./menu.js"></script>
+  <script>
+const user= document.querySelector("#login");
+const signinData=JSON.parse(localStorage.getItem("signin"));
+if(signinData != null){
+     user.innerHTML=`<h2>  ${signinData.username.toUpperCase()} </h2>
+    <h2>  </h2>`;
+ }
+
+
+
+ <div>
+  <a id="sign" href="signin\signin.html"
+    ><span class="material-symbols-outlined"> person </span>Sign
+    in
+  </a>
+</div>
+  </script>
 
   
