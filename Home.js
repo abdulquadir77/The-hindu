@@ -1,6 +1,6 @@
 //API append From "NEWS API" ("Abdul Quadir")
 async function myFunction() {
-  let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=072c5a0204aa44c9820f8fe48e737ff7`;
+  let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=c6e033dcc9ad4f3fa103d693944185ec`;
 
   let res = await fetch(url);
   let data = await res.json();
@@ -105,7 +105,8 @@ function sideScroll(element, direction, speed, distance, step) {
 
 // const apiikeys ="9ba8dfd0cda84d17abfebbb4e4f05b67";
 // const apiikeys = "280cfd40a460489e99d7b0bf899d28c3";
-const apiikeys = "072c5a0204aa44c9820f8fe48e737ff7";
+// const apiikeys = "072c5a0204aa44c9820f8fe48e737ff7";
+const apiikeys = "c6e033dcc9ad4f3fa103d693944185ec";
 
 let searchDetails = async () => {
   try {
@@ -127,20 +128,20 @@ let searchDetails = async () => {
 };
 
 // let movie = document.getElementById("containt1");
-async function getData15() {
-  let urls15 = `https://newsapi.org/v2/top-headlines?country=uk&category=business&pageSize=5&apiKey=${apiikeys}`;
+async function showDataappne() {
+  let showDtadfgt = `https://newsapi.org/v2/top-headlines?country=uk&category=business&pageSize=5&apiKey=${apiikeys}`;
   try {
-    let response = await fetch(urls15);
+    let response = await fetch(showDtadfgt);
     let users = await response.json();
-    appened15(users.articles);
+    nsdnfindjn(users.articles);
     // console.log(users.articles);
   } catch (err) {
     console.log(err);
   }
 }
-getData15();
+showDataappne();
 
-function appened15(data) {
+function nsdnfindjn(data) {
   movie.innerHTML = null;
   data.forEach(function (el) {
     var card = document.createElement("div");
