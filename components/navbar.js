@@ -16,7 +16,7 @@ function navbar(){
     </div>
     <div id="search-box_footer">
             <input id="query" type="text" placeholder="Search here...">
-            <button  onclick="search()" <i class="fa-solid fa-magnifying-glass" ></i></button>
+            <button  <i class="fa-solid fa-magnifying-glass" ></i></button>
             <!-- <button <i class="fa-solid fa-magnifying-glass"></i></i></button> --> 
     </div>
 </section>

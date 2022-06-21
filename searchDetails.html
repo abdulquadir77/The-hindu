@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Exo+2:wght@700&family=Fira+Sans+Condensed:wght@500&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="./style/pagination.css">
-    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/menu.css">
@@ -116,6 +115,59 @@ document.getElementById("fooTer1").innerHTML = footer();
 import {footerSecondPart} from './components/footer1.js'
 document.getElementById("fooTer2").innerHTML = footerSecondPart();
 
+let search = (e) => {
+  if(e.key === "Enter"){
+      event.preventDefault();
+      window.location.href = "searchDetails.html"
+      searchNews();
+      ;
+    }
+  };
 
+  document.getElementById("query").addEventListener("keypress",search);
+
+  let searchNews = async () => {
+    let value = document.getElementById("query").vlaue;
+    
+    try{
+      let res = await fetch(`https://newsapi.org/v2/everything?q=${value}&from=2022-06-20&to=2022-06-20&sortBy=popularity&apiKey=${Home_API}`)
+      // let res = await fetch(`https://newsapi.org/v2/top-headlines?country=q=${value}&apiKey=${Home_API}`)
+      let data = await res.json();
+      // console.log(data);
+      localStorage.setItem("news", JSON.stringify(data));
+     
+    }catch(error){
+      console.log(error);
+    }
+  }
+  searchNews();
+
+  let searchFooterNews = (e) => {
+  if(e.key === "Enter"){
+      event.preventDefault();
+      window.location.href = "searchDetails.html"
+      searchNews();
+      ;
+    }
+  };
+
+  document.getElementById("footer_search").addEventListener("keypress",searchFooterNews);
+
+  let serchFooterAppendNews = async () => {
+    let value = document.getElementById("query").vlaue;
+    
+    try{
+      let res = await fetch(`https://newsapi.org/v2/everything?q=${value}&from=2022-06-20&to=2022-06-20&sortBy=popularity&apiKey=${Home_API}`)
+      // let res = await fetch(`https://newsapi.org/v2/top-headlines?country=q=${value}&apiKey=${Home_API}`)
+      let data = await res.json();
+      console.log(data);
+      localStorage.setItem("news", JSON.stringify(data));
+     
+    }catch(error){
+      console.log(error);
+    }
+  }
+  serchFooterAppendNews();
+  
 
 </script>

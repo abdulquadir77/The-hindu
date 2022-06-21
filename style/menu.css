@@ -1,5 +1,31 @@
 /* arif part */
 
+* {
+  box-sizing: border-box;
+  /* margin: 0px; */
+  /* padding: 0px; */
+}
+body{
+  width:75%;
+  /* margin-left: 20%; */
+  /* margin: auto;
+  background: #f5f5f5; */
+}
+
+/* * {
+  margin: auto;
+  background: #2a5e88;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  outline: 0 !important;
+} */
+
 .overlay {
   height: 100%;
   width: 0;
@@ -262,3 +288,4 @@ div.details-menu ul.sub-menu2 li a {
 .fa-brands {
   color: #fff;
 }
+
