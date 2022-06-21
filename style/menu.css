@@ -61,7 +61,7 @@ body{
   color: #000000;
 }
 * {
-  /* background: #2a5e88; */
+  /* background: #2a5e88;  */
   box-sizing: border-box;
   margin-top: 0px;
   margin-right: auto;
@@ -141,9 +141,9 @@ li {
 #popup-menu li {
   position: relative;
 }
-#housing_img {
-  width: 30px;
-  height: 10px;
+#housing_img>a>img {
+  width: 100px;
+  height: 12px;
 }
 .details-menu > ul > li {
   font-size: 16px;

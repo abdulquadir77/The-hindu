@@ -112,7 +112,7 @@ function navbar(){
                             <li>
                                 <a href="#">epaper</a>
                             </li>
-                            <li>
+                            <li id="housing_img">
                                 <a href="https://www.thehindu.com/housing-real-estate-india/">
                                     <img src="https://www.thehindu.com/theme/images/th-online/housing.png" alt="Housing">
                                 </a>
