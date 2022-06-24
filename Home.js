@@ -3,7 +3,7 @@
 const Home_API ="ee893823fdd3460b8ffd85653692c318"
 
 async function myFunction() {
-  let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${Home_API}`;
+  let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${Home_API}`;
 
   // let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=c6e033dcc9ad4f3fa103d693944185ec`;
   let res = await fetch(url);

@@ -150,7 +150,7 @@ let YoutubeNews = document.getElementById("video-detils")
 // <!-------------------------NATIONAL---news----------------------------------------------------------------------------------->
 var NationalNews = document.getElementById("last-grid")
 async function NationalAppend() {
-  let Nationa_URL = `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=100&apiKey=${Home2_api}`;
+  let Nationa_URL = `https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=100&apiKey=${Home2_api}`;
   try {
     let response = await fetch(Nationa_URL);
     let users = await response.json();
@@ -221,7 +221,7 @@ function NationaData(data) {
 
 var sportsNews = document.getElementById("sports")
 async function sportsAppend() {
-  let sports_url = `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=12&apiKey=${Home2_api}`;
+  let sports_url = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=12&apiKey=${Home2_api}`;
   try {
     let response = await fetch(sports_url);
     let users = await response.json();
@@ -260,7 +260,7 @@ function sportsData(data) {
 
 var HealthsNews = document.getElementById("Health")
 async function healthsAppend() {
-  let healths_url = `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=12&apiKey=${Home2_api}`;
+  let healths_url = `https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=12&apiKey=${Home2_api}`;
   try {
     let response = await fetch(healths_url);
     let users = await response.json();
@@ -299,7 +299,7 @@ function healthsData(data) {
 
 var EntertainmentsNews = document.getElementById("entertainment")
 async function EntertainmentsAppend() {
-  let Entertainments_URL = `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=12&apiKey=${Home2_api}`;
+  let Entertainments_URL = `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&pageSize=12&apiKey=${Home2_api}`;
   try {
     let response = await fetch(Entertainments_URL);
     let users = await response.json();
@@ -389,7 +389,7 @@ function OthersNewsData(data){
 
 var usaNews = document.getElementById("UsaNews")
 async function usaAppend() {
-  let usa_URL = `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=16&apiKey=${Home2_api}`;
+  let usa_URL = `https://newsapi.org/v2/top-headlines?country=us&category=general&pageSize=16&apiKey=${Home2_api}`;
   try {
     let response = await fetch(usa_URL);
     let users = await response.json();
