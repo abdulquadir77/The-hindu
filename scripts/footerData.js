@@ -4,7 +4,7 @@ const Home2_api ="ee893823fdd3460b8ffd85653692c318";
 
 let Headline1 = document.getElementById("box-1");
 async function HeadlineAppend() {
-  let HeadlineURL = `https://newsapi.org/v2/top-headlines?country=us&pageSize=5&apiKey=${Home2_api}`;
+  let HeadlineURL = `https://newsapi.org/v2/top-headlines?country=in&pageSize=5&apiKey=${Home2_api}`;
   try {
     let response = await fetch(HeadlineURL);
     let users = await response.json();
