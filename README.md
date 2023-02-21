@@ -1,4 +1,7 @@
-# The-hindu
+# The-hindu---
+
+
+live view link --https://creative-blancmange-6a7cbd.netlify.app/
 Construct Week Project;
 Project Discreption
 -------------------
@@ -13,4 +16,6 @@ Ashish- Due to electricy issue he is not able to connect with us, so contributio
 The netlify link is not working when implemrnting the API is details way not working
 
 The google API is expiring within 30min, due to this we faced a lot of issue during final implemention of the page.
+
+
 
